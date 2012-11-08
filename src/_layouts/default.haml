@@ -2,9 +2,42 @@
 %html
     %head
         %title Prodeo Academy
-        %link{:href => "css/bootstrap.css", :rel => "stylesheet"}
-        %link{:href => "css/application.css", :rel => "stylesheet"}
         %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
-        %script{:src => "js/bootstrap.js"}
-        %script{:src => "js/application.js"}
+        %script{:src => "http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/bootstrap.min.js"}
+        %link{:href => "http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/css/bootstrap.min.css", :rel => "stylesheet"}
+        %link{:href => "http://fonts.googleapis.com/css?family=Asap", :rel => "stylesheet"}
+        %link{:href => "/css/application.css", :rel => "stylesheet"}
+        %script{:src => "/js/application.js"}
     %body
+        .container#header
+            .row
+                .span4
+                    %img{:src => "/img/logo.png"}
+                .span8
+                    %ul.nav.nav-pills.pull-right#nav
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                About Prodeo
+                                %span.caret
+                            = submenu(["Who We Are", "Our History", "Our Staff", "Our Board", "Our Advisory Council", "Our Partners"], "About")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Our Approach
+                                %span.caret
+                            = submenu(["Our Mission", "Our Vision", "Our Core Values", "Our School Day", "Our Family Partnership"], "Approach")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Student Life
+                                %span.caret
+                            = submenu(["A Typical Day", "School Calendar", "Academics"], "Student Life")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Results
+                                %span.caret
+                            = submenu(["Achievement Gap", "Our Results"], "Results")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Contact Us
+                                %span.caret
+                            = submenu(["Directions", "Enroll Your Child", "Apply to Teach", "Apply to Tutor", "Volunteer"], "Contact")
+        = yield :main

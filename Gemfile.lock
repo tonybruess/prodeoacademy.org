@@ -17,8 +17,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass_twitter_bootstrap (2.0.3)
-      compass
     fssm (0.2.9)
     haml (3.1.7)
     highline (1.6.15)
@@ -31,7 +29,7 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     rack (1.4.1)
-    sass (3.2.1)
+    sass (3.2.2)
     staticmatic2 (2.1.6)
       aws-s3
       compass (~> 0.12.1)
@@ -49,7 +47,5 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano
-  compass
-  compass_twitter_bootstrap
   haml
   staticmatic2
