@@ -1,4 +1,3 @@
-require "whenever/capistrano"
 require "bundler/capistrano"
 require "rvm/capistrano"
 
