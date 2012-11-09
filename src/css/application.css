@@ -9,7 +9,7 @@
 }
 
 #nav {
-    margin-top: 60px;
+    margin-top: 05px;
     font-size: 16px;
 }
 
@@ -60,40 +60,40 @@
     margin-bottom: 3px;
 }
 
-/* Carousel base class */
 .carousel {
-margin-bottom: 60px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.8);
 }
 
 .carousel .container {
-position: absolute;
-right: 0;
-bottom: 0;
-left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .carousel-control {
-background-color: transparent;
-border: 0;
-font-size: 120px;
-margin-top: 0;
-text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: transparent;
+    border: 0;
+    font-size: 120px;
+    margin-top: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 
 .carousel .item {
-height: 400px;
+    height: 400px;
 }
 .carousel img {
-min-width: 100%;
-height: 500px;
+    min-width: 100%;
+    min-height: 400px;
 }
 
 .carousel-caption {
-background-color: transparent;
-position: static;
-max-width: 550px;
-padding: 0 20px;
-margin-bottom: 100px;
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-bottom: 100px;
 }
 
 .carousel-caption h1 {
@@ -102,13 +102,58 @@ margin-bottom: 100px;
 
 .carousel-caption h1,
 .carousel-caption p.lead {
-margin: 0;
-line-height: 1.25;
-color: #fff;
-text-shadow: 0 2px 10px rgba(0,0,0,.8);
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,.8);
 }
+
 .carousel-caption .btn {
-margin-top: 10px;
+    margin-top: 10px;
 }
 
+.center {
+    text-align: center;
+}
 
+.hero-unit > h1 {
+    font-size: 50px;
+}
+
+#social {
+    padding-bottom: 0;
+    height: 30px;
+}
+
+#social #twitter {
+    font-size: 1px;
+}
+
+#social #facebook {
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+/* *
+   * INDEX
+   *
+   */
+#index #families {
+    background-image: url(/img/index/families.jpeg);
+}
+
+#index #donors {
+    background-image: url(/img/index/donors.jpeg);
+}
+
+#index #tutors {
+    background-image: url(/img/index/tutors.jpeg);
+}
+
+#index .hero-unit {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    text-shadow: 0 2px 3px rgba(0,0,0,.8);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}

@@ -12,8 +12,17 @@
         .container#header
             .row
                 .span4
-                    %img{:src => "/img/logo.png"}
+                    %a{:href => "/"}
+                        %img{:src => "/img/logo.png"}
                 .span8
+                    .row
+                        .well.well-small.pull-right#social
+                            .pull-left#facebook
+                                .fb-like{:data => {:href => "https://www.facebook.com/prodeoacademy", :send => "true", :layout => "button_count", :width => "450", :"show-faces" => "false"}}
+
+                            .pull-left#twitter
+                                %a.twitter-follow-button{:href => "https://twitter.com/ProdeoAcademy", :data => {:"show-count" => "false"}} Follow @ProdeoAcademy
+
                     %ul.nav.nav-pills.pull-right#nav
                         %li.dropdown-submenu
                             %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
@@ -41,3 +50,12 @@
                                 %span.caret
                             = submenu(["Directions", "Enroll Your Child", "Apply to Teach", "Apply to Tutor", "Volunteer"], "Contact")
         = yield :main
+        %hr
+        %footer
+            .container
+                .pull-left
+                    &copy; Copyright 2012 Prodeo Academy
+                .pull-right
+                    %a{:href => "/terms"} Terms of Use
+                    |
+                    %a{:href => "/privacy"} Privacy Policy
