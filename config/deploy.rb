@@ -15,9 +15,10 @@ set :branch, 'master'
 set :deploy_to, "/home/deploy/apps/prodeo"
 set :user, 'deploy'
 
-server '69.162.80.34', :app, :db, :web, :primary => true # hades
-server '64.31.53.34', :web # zeus
+server '64.31.53.34', :app, :db, :web, :primary => true # zeus
 
 default_environment["RAILS_ENV"] = 'production'
 
 set :rails_env, :production
+
+ssh_options[:forward_agent] = true
