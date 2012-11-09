@@ -6,7 +6,7 @@ module NavHelper
             if section != nil
                 href << urlify(section) + "/"
             end
-            href << urlify(page)
+            href << urlify(page) << ".html"
             output << %Q{<li><a href="#{href}">#{page}</a></li>}
         end
         output << "</ul>"

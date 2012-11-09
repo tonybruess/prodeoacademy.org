@@ -30,6 +30,6 @@ namespace :deploy do
     end
 
     task :build_code, :except => { :no_release => true } do
-        run "staticmatic build #{latest_release}"
+        run "#{latest_release}/bin/staticmatic build #{latest_release}"
     end
 end
