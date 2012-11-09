@@ -21,3 +21,15 @@ default_environment["RAILS_ENV"] = 'production'
 set :rails_env, :production
 
 ssh_options[:forward_agent] = true
+
+namespace :deploy do
+    task :update do
+        update_code
+        build_code
+        symlink
+    end
+
+    task :build_code, :except => { :no_release => true } do
+        run "staticmatic build #{latest_release}"
+    end
+end
