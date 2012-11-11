@@ -4,6 +4,12 @@
     font-family: 'Asap', sans-serif;
 }
 
+body {
+    background-color: #fffef6;
+    background-image: url(/img/header.png);
+    background-repeat: repeat-x;
+}
+
 #header {
     margin-top: 20px;
 }
@@ -11,6 +17,14 @@
 #nav {
     margin-top: 05px;
     font-size: 16px;
+}
+
+#nav ul.dropdown-menu {
+    background-color: #922628;
+}
+
+#nav ul.dropdown-menu li a {
+    color: #fff;
 }
 
 #carousel {
@@ -42,27 +56,28 @@
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a,
-.nav > li > a:hover {
-    color: #fff;
-    background-color: #922628;
+.nav > li > a:hover,
+#nav ul.dropdown-menu li a:hover {
+    color: #000;
+    background-color: #eee;
     background-image: none;
-}
-
-.nav li.dropdown-submenu:hover .caret,
-.nav li.dropdown-submenu a:hover .caret {
-  border-top-color: #ffffff;
-  border-bottom-color: #ffffff;
-  opacity: 1;
-  filter: alpha(opacity=100);
 }
 
 .dropdown-submenu > .dropdown-menu > li {
     margin-bottom: 3px;
 }
 
+.dropdown-menu li.divider {
+    border: none;
+    border-top: 1px dotted white;
+    background: none;
+    margin: 3px 0;
+    height: 0px;
+}
+
 .carousel {
     margin-bottom: 30px;
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.8);
+	box-shadow: 0 5px 10px -5px #000;
 }
 
 .carousel .container {
@@ -70,6 +85,8 @@
     right: 0;
     bottom: 0;
     left: 0;
+    padding-left: 40px;
+    width: 900px;
 }
 
 .carousel-control {
@@ -134,26 +151,29 @@
     margin-right: 10px;
 }
 
+footer {
+    background-color: #922628;
+}
+
+footer, footer a {
+    color: #fff;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
 /* *
    * INDEX
    *
    */
-#index #families {
-    background-image: url(/img/index/families.jpeg);
-}
-
-#index #donors {
-    background-image: url(/img/index/donors.jpeg);
-}
-
-#index #tutors {
-    background-image: url(/img/index/tutors.jpeg);
-}
-
 #index .hero-unit {
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    color: #fff;
-    text-shadow: 0 2px 3px rgba(0,0,0,.8);
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }

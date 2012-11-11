@@ -1,13 +1,14 @@
 module NavHelper
     def submenu(pages, section)
         output = '<ul class="dropdown-menu">'
-        pages.each do |page|
+        pages.each_with_index do |page, i|
             href = "/"
             if section != nil
                 href << urlify(section) + "/"
             end
             href << urlify(page) << ".html"
             output << %Q{<li><a href="#{href}">#{page}</a></li>}
+            output << "<li class='divider'></li>" if pages[i + 1] != nil
         end
         output << "</ul>"
     end
