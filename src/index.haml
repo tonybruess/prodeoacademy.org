@@ -28,14 +28,48 @@
             .hero-unit#families
                 %h1 Families
                 %p College Starts Here
-                %a.btn.btn-primary Enroll Your Child &raquo;
+                .btn-group.dropup
+                    %a.btn.btn-info.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                        Enroll Your Child
+                        %span.caret
+                    %ul.dropdown-menu
+                        %li
+                            %a{:href => ""} Why choose Prodeo Academy?
+                        %li
+                            %a{:href => ""} Student Application
+                        %li
+                            %a{:href => ""} Stay in Touch
         .span4
             .hero-unit#donors
                 %h1 Donors
                 %p Close the Gap
-                %a.btn.btn-primary Volunteer + Career &raquo;
+                .btn-group.dropup
+                    %a.btn.btn-primary.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                        Volunteer + Career
+                        %span.caret
+                    %ul.dropdown-menu
+                        %li
+                            %a{:href => ""} Why choose Prodeo Academy?
+                        %li
+                            %a{:href => ""} Who we are looking for
+                        %li
+                            %a{:href => ""} Apply to Teach
+                        %li
+                            %a{:href => ""} Apply to Tutor
+                        %li
+                            %a{:href => ""} Volunteer
         .span4
             .hero-unit#tutors
                 %h1 Tutors
                 %p Build the Future
-                %a.btn.btn-primary Donate Today &raquo;
+                .btn-group.dropup
+                    %a.btn.btn-success.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                        Donate Today
+                        %span.caret
+                    %ul.dropdown-menu
+                        %li
+                            %a{:href => ""} Why choose Prodeo Academy?
+                        %li
+                            %a{:href => ""} Benefactors
+                        %li
+                            %a{:href => ""} Invest
