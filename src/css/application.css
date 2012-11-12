@@ -15,8 +15,8 @@ body {
 }
 
 #nav {
-    margin-top: 05px;
-    font-size: 16px;
+    margin-top: 0px;
+    font-size: 15px;
 }
 
 #nav ul.dropdown-menu {
@@ -27,12 +27,12 @@ body {
     color: #fff;
 }
 
-#carousel {
-    margin-top: 25px;
+.nav-tabs > li > a, .nav-pills > li > a {
+    margin-right: 0;
 }
 
 .nav-tabs > li > a, .nav-pills > li > a {
-    margin-right: 0;
+    padding: 9px 8px;
 }
 
 .dropdown-submenu > a::after {
@@ -73,6 +73,10 @@ body {
     background: none;
     margin: 3px 0;
     height: 0px;
+}
+
+#carousel {
+    margin-top: 5px;
 }
 
 .carousel {
@@ -140,6 +144,7 @@ body {
 #social {
     padding-bottom: 0;
     height: 30px;
+    margin-top: 20px;
 }
 
 #social #twitter {
