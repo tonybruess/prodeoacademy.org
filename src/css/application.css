@@ -19,11 +19,11 @@ body {
     font-size: 15px;
 }
 
-#nav ul.dropdown-menu {
+ul.dropdown-menu {
     background-color: #922628;
 }
 
-#nav ul.dropdown-menu li a {
+ul.dropdown-menu li a {
     color: #fff;
 }
 
@@ -48,7 +48,7 @@ body {
     color: #2a326f;
 }
 
-.nav .dropdown-toggle .caret {
+.dropdown-toggle .caret {
     border-top-color: #2a326f;
     border-bottom-color: #2a326f;
 }
@@ -57,7 +57,7 @@ body {
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a,
 .nav > li > a:hover,
-#nav ul.dropdown-menu li a:hover {
+ul.dropdown-menu li a:hover {
     color: #000;
     background-color: #eee;
     background-image: none;
@@ -189,4 +189,12 @@ footer a:hover {
 
 #index .btn-group {
     text-align: left;
+}
+
+#index .hero-unit {
+    padding: 60px 0;
+}
+
+#index .hero-unit .btn {
+    text-transform: uppercase;
 }
