@@ -48,9 +48,10 @@ ul.dropdown-menu li a {
     color: #2a326f;
 }
 
-.dropdown-toggle .caret {
-    border-top-color: #2a326f;
-    border-bottom-color: #2a326f;
+.dropdown-toggle .caret,
+.nav .dropdown-toggle .caret {
+    border-top-color: #922628;
+    border-bottom-color: #922628;
 }
 
 .dropdown-menu li > a:hover,
