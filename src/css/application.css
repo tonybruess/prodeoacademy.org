@@ -6,17 +6,27 @@
 
 body {
     background-color: #fffef6;
-    background-image: url(/img/header.png);
-    background-repeat: repeat-x;
+}
+
+#top {
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    position: absolute;
+    height: 190px;
+    width: 100%;
 }
 
 #header {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 #nav {
     margin-top: 0px;
     font-size: 15px;
+    z-index: 1000;
+    margin-bottom: 10px;
 }
 
 ul.dropdown-menu {
@@ -42,6 +52,8 @@ ul.dropdown-menu li a {
 .dropdown-submenu > .dropdown-menu {
     left: auto;
     top: 39px;
+    z-index: 1001;
+    overflow: visible;
 }
 
 .nav-tabs > li > a, .nav-pills > li > a {
@@ -76,13 +88,11 @@ ul.dropdown-menu li a:hover {
     height: 0px;
 }
 
-#carousel {
-    margin-top: 5px;
-}
-
 .carousel {
     margin-bottom: 30px;
 	box-shadow: 0 5px 10px -5px #000;
+	position: relative;
+	z-index: 3;
 }
 
 .carousel .container {
@@ -92,22 +102,17 @@ ul.dropdown-menu li a:hover {
     left: 0;
     padding-left: 40px;
     width: 900px;
-}
-
-.carousel-control {
-    background-color: transparent;
-    border: 0;
-    font-size: 120px;
-    margin-top: 0;
-    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	z-index: 600;
 }
 
 .carousel .item {
     height: 400px;
+	z-index: 600;
 }
 .carousel img {
     min-width: 100%;
     min-height: 400px;
+	z-index: 600;
 }
 
 .carousel-caption {
@@ -178,6 +183,50 @@ footer a:hover {
     margin-top: 8px;
     margin-left: 3px;
     border-width: 7px 5px;
+}
+
+/* *
+   * PANELS
+   *
+   *
+   */
+#panel-left {
+    background-color: #f7f7f7;
+    z-index: -2;
+    position: relative;
+    margin-top: 45px;
+    min-height: 150px;
+}
+
+#panel-left .content {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+#panel-right {
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 0;
+    padding-left: 20px;
+    min-height: 400px;
+    z-index: 1000;
+    position: relative;
+}
+
+#panel-right .content {
+    margin-right: 20px;
+}
+
+#panel-right img {
+    margin: 15px;
+}
+
+#panel-right img.pull-left {
+    margin-left: 0;
+}
+
+#panel-right img.pull-right {
+    margin-right: 0;
 }
 
 /* *
