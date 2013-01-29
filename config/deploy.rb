@@ -10,7 +10,7 @@ set :application, "prodeo"
 set :repository, "git@github.com:mrapple/prodeoacademy.org.git"
 
 set :scm, :git
-set :branch, 'master'
+set :branch, 'temp'
 set :deploy_to, "/home/deploy/apps/prodeo"
 set :user, 'deploy'
 
