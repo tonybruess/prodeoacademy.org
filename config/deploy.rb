@@ -20,8 +20,8 @@ server '69.162.80.34', :app, :db, :web, :primary => true # zeus
 default_environment["RAILS_ENV"] = 'production'
 
 set :rails_env, :production
+set :ssh_options, { :forward_agent => true }
 
-ssh_options[:forward_agent] = true
 default_run_options[:pty] = true
 
 namespace :deploy do
