@@ -23,38 +23,6 @@
 
                             .pull-left#twitter
                                 %a.twitter-follow-button{:href => "https://twitter.com/ProdeoAcademy", :data => {:"show-count" => "false"}} Follow @ProdeoAcademy
-
-                    %ul.nav.nav-pills.pull-right#nav
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                About Prodeo
-                                %span.caret
-                            = submenu(["Who We Are", "Our History", "Our Staff", "Our Board", "Our Advisory Council", "Our Partners"], "About")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Our Approach
-                                %span.caret
-                            = submenu(["Our Mission", "Our Vision", "Our Core Values", "Our Family Partnership"], "Approach")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Student Life
-                                %span.caret
-                            = submenu(["A Typical Day", "School Calendar", "Academics"], "Student Life")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Results
-                                %span.caret
-                            = submenu(["Achievement Gap", "Our Results"], "Results")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Resources
-                                %span.caret
-                            = submenu(["Categories"], "Resources")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Contact Us
-                                %span.caret
-                            = submenu(["Directions", "Enroll Your Child", "Apply to Teach", "Apply to Tutor", "Volunteer"], "Contact")
         = yield :main
         %footer
             .container
