@@ -21,6 +21,7 @@ default_environment["RAILS_ENV"] = 'production'
 
 set :rails_env, :production
 set :ssh_options, { :forward_agent => true }
+set :bundle_flags,    "--binstubs"
 
 default_run_options[:pty] = true
 
