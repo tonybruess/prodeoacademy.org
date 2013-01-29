@@ -13,8 +13,9 @@ set :scm, :git
 set :branch, 'temp'
 set :deploy_to, "/home/deploy/apps/prodeo"
 set :user, 'deploy'
+set :port, 50210
 
-server '64.31.53.34', :app, :db, :web, :primary => true # zeus
+server '69.162.80.34', :app, :db, :web, :primary => true # zeus
 
 default_environment["RAILS_ENV"] = 'production'
 
