@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #fffef6;
+    background-color: #F1F1FA;
 }
 
 #top {
@@ -89,7 +89,6 @@ ul.dropdown-menu li a:hover {
 }
 
 .carousel {
-    margin-bottom: 30px;
 	box-shadow: 0 5px 10px -5px #000;
 	position: relative;
 	z-index: 3;
@@ -185,36 +184,52 @@ footer a:hover {
     border-width: 7px 5px;
 }
 
+.center {
+    text-align: center;
+}
+
 /* *
    * PANELS
    *
    *
    */
+#panel-main {
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 0;
+    min-height: 400px;
+    z-index: 1000;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #panel-left {
     background-color: #f7f7f7;
     z-index: -2;
     position: relative;
     margin-top: 45px;
     min-height: 150px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 #panel-left .content {
-    margin-left: 15px;
-    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 #panel-right {
     background-color: white;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
     margin-left: 0;
-    padding-left: 20px;
     min-height: 400px;
     z-index: 1000;
     position: relative;
 }
 
 #panel-right .content {
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #panel-right img {
@@ -229,16 +244,20 @@ footer a:hover {
     margin-right: 0;
 }
 
+.thumbnail {
+    padding-top: 15px;
+}
+
 /* *
    * INDEX
    *
    */
 #index .hero-unit {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 40px 0;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25), 0 2px 10px rgba(0,68,204,.3)
+    background: none;
+    padding: 5px 0;
+    border-radius: 0px;
 }
+
 
 #index li {
     list-style: none;
@@ -254,5 +273,7 @@ footer a:hover {
 }
 
 #index .hero-unit .btn {
-    #text-transform: uppercase;
+    color: #922628;
+    font-size: 22px;
+    font-weight: bold;
 }
