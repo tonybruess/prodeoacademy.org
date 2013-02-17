@@ -1,0 +1,31 @@
+development:
+  sessions:
+    default:
+      database: prodeo-dev
+      hosts:
+        - localhost:27017
+
+test:
+  sessions:
+    default:
+      database: prodeo-dev
+      hosts:
+        - localhost:27017
+
+staging:
+  options:
+    identity_map_enabled: true
+  sessions:
+    default:
+      hosts:
+        - dal02.oc.tc:27017
+      database: prodeo-prod
+
+production:
+  options:
+    identity_map_enabled: true
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: prodeo-prod

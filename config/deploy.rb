@@ -6,15 +6,16 @@ set :rvm_type, :user
 set :rvm_path, "$HOME/.rvm"
 set :rvm_bin_path, "$HOME/.rvm/bin"
 
-set :application, "prodeo"
+set :application, "prodeo2"
 set :repository, "git@github.com:mrapple/prodeoacademy.org.git"
 
 set :scm, :git
 set :branch, 'master'
-set :deploy_to, "/home/deploy/apps/prodeo"
+set :deploy_to, "/home/deploy/apps/prodeo2"
 set :user, 'deploy'
+set :port, 50210
 
-server '64.31.53.34', :app, :db, :web, :primary => true # zeus
+server '69.162.80.34', :app, :db, :web, :primary => true # zeus
 
 default_environment["RAILS_ENV"] = 'production'
 

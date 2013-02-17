@@ -1,0 +1,63 @@
+!!! 5
+%html
+    %head
+        %title Prodeo Academy
+        %link{:href => "//fonts.googleapis.com/css?family=Asap:400,700", :rel => "stylesheet"}
+        %link{:href => "/assets/application.css", :rel => "stylesheet"}
+        %script{:src => "/assets/application.js"}
+    %body
+        #top
+        .container#header
+            .row
+                .span4
+                    %a{:href => "/"}
+                        %img{:src => "/assets/logo.png"}
+                .span8
+                    .row
+                        .well.well-small.pull-right#social
+                            .pull-left#facebook
+                                .fb-like{:data => {:href => "https://www.facebook.com/prodeoacademy", :send => "false", :layout => "button_count", :width => "450", :"show-faces" => "false"}}
+
+                            .pull-left#twitter
+                                %a.twitter-follow-button{:href => "https://twitter.com/ProdeoAcademy", :data => {:"show-count" => "false"}} Follow @ProdeoAcademy
+
+                    %ul.nav.nav-pills.pull-right#nav
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                About Prodeo
+                                %span.caret
+                            = submenu(["Who We Are", "Our History", "Our Staff", "Our Board", "Our Advisory Council", "Our Partners"], "About")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Our Approach
+                                %span.caret
+                            = submenu(["Our Mission", "Our Vision", "Our Core Values", "Our Family Partnership"], "Approach")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Student Life
+                                %span.caret
+                            = submenu(["A Typical Day", "School Calendar", "Academics"], "Student Life")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Results
+                                %span.caret
+                            = submenu(["Achievement Gap", "Our Results"], "Results")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Resources
+                                %span.caret
+                            = submenu(["Categories"], "Resources")
+                        %li.dropdown-submenu
+                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                Contact Us
+                                %span.caret
+                            = submenu(["Directions", "Enroll Your Child", "Apply to Teach", "Apply to Tutor", "Volunteer"], "Contact")
+        = yield
+        %footer
+            .container
+                .pull-left
+                    &copy; Copyright 2013 Prodeo Academy
+                .pull-right
+                    %a{:href => "#"} Terms of Use
+                    |
+                    %a{:href => "#"} Privacy Policy
