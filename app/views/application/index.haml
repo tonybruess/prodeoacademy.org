@@ -33,13 +33,13 @@
                         %span.caret
                     %ul.dropdown-menu
                         %li
-                            %a{:href => ""} Why choose Prodeo Academy?
+                            %a{:href => "/assets/handout_one.pdf", :target => "_blank"} Why choose Prodeo Academy?
                         %li.divider
                         %li
-                            %a{:href => ""} Student Application
+                            %a{:href => "/"} Student Application
                         %li.divider
                         %li
-                            %a{:href => ""} Stay in Touch
+                            %a{:href => "#stay-in-touch", :data => {:toggle => "modal"}} Stay in Touch
         .span4
             .hero-unit#donors
                 %h3 Close the Gap
@@ -49,19 +49,19 @@
                         %span.caret
                     %ul.dropdown-menu
                         %li
-                            %a{:href => ""} Why choose Prodeo Academy?
+                            %a{:href => "/assets/handout_two.pdf", :target => "_blank"} Why choose Prodeo Academy?
                         %li.divider
                         %li
                             %a{:href => ""} Who we are looking for
                         %li.divider
                         %li
-                            %a{:href => ""} Apply to Teach
+                            %a{:href => "/contact/apply_to_teach"} Apply to Teach
                         %li.divider
                         %li
-                            %a{:href => ""} Apply to Tutor
+                            %a{:href => "/contact/apply_to_tutor"} Apply to Tutor
                         %li.divider
                         %li
-                            %a{:href => ""} Volunteer
+                            %a{:href => "/contact/volunteer"} Volunteer
         .span4
             .hero-unit#tutors
                 %h3 Build the Future
@@ -71,10 +71,69 @@
                         %span.caret
                     %ul.dropdown-menu
                         %li
-                            %a{:href => ""} Why choose Prodeo Academy?
+                            %a{:href => "/assets/handout_three.pdf", :target => "_blank"} Why choose Prodeo Academy?
                         %li.divider
                         %li
-                            %a{:href => ""} Benefactors
+                            %a{:href => "#supporters", :data => {:toggle => "modal"}} Supporters
                         %li.divider
                         %li
                             %a{:href => ""} Invest
+#stay-in-touch.modal.hide.fade
+    .modal-header
+        %button.close{:type => "button", :data => {:dismiss => "modal"}} x
+        %h3 Stay in Touch
+    .modal-body
+        %p.lead If you’re interested in learning more about our inspiring community, feel free to contact us.
+        %br
+        %p
+            %b Rick Campion, Executive Director
+            %p.text-info rickcampion@prodeoacademy.org
+            %p.text-info (612) 559-4881
+        %br
+        %p
+            %b Chancey Anderson, Principal
+            %p.text-info chanceyanderson@prodeoacademy.org
+            %p.text-info (347) 982-5061
+#supporters.modal.hide.fade
+    .modal-header
+        %button.close{:type => "button", :data => {:dismiss => "modal"}} x
+        %h3 Supporters
+    .modal-body
+        %p
+            %i Thank you to all the individuals, corporations, and foundations that have contributed services and support.
+        %p
+            %b Support from Individuals
+        %ul.unstyled
+            %li
+                %i Carolyn and Dane Anderson
+            %li
+                %i Tony Bruess
+            %li
+                %i Mary Lou and Ray Barton
+            %li
+                %i Jane and Greg Goven 
+            %li
+                %i Nancy and John Lawlor  
+            %li
+                %i Mary McGreevy
+            %li
+                %i Mary Sue Payne
+            %li
+                %i Ann and Pat Ryan 
+        %p
+            %b Support from Coporations and Foundations
+        %ul.unstyled
+            %li
+                %i General Mills Foundation
+            %li
+                %i The Lawlor Group
+            %li
+                %i Lillehei Family Foundation
+            %li
+                %i Minneapolis Foundation
+            %li
+                %i Mulvehill Family Foundation
+            %li
+                %i Tierney Brothers Inc.
+            %li
+                %i Walton Family Foundation

@@ -203,6 +203,21 @@ footer a:hover {
     text-align: center;
 }
 
+.content h2,
+.content h3,
+.content h4 {
+    border-bottom: 3px solid rgb(159, 20, 22);
+    padding-bottom: 5px;
+}
+
+.lead {
+    margin-bottom: 10px;
+}
+
+li.lead {
+    margin-bottom: 5px;
+}
+
 /* *
    * PANELS
    *
@@ -231,6 +246,7 @@ footer a:hover {
 #panel-left .content {
     padding-left: 15px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 #panel-right {
@@ -291,4 +307,20 @@ footer a:hover {
     color: #922628;
     font-size: 22px;
     font-weight: bold;
+}
+
+/* *
+   * BOARD
+   *
+   */
+.thumbnails#board li {
+    height: 350px;
+}
+
+/* *
+   * COUNCIL
+   *
+   */
+.thumbnails#council li {
+    height: 125px;
 }

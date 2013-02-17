@@ -1,10 +1,75 @@
 .container
     .row
-        .span4#panel-left
-            .content
-                %h3 Sidebar Content
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        .span8#panel-right
+        .span12#panel-main
             .content
                 %h2 A Typical Day
-                %iframe{:src => "https://www.google.com/calendar/embed?src=9l57tm1jj9jadohpjj02ubru0k%40group.calendar.google.com&ctz=America/Chicago", :style => "border: 0", :width => "580", :height => "600", :frameborder => "0", :scrolling => "no"}
+                %table.table.table-bordered.table-striped.table-hover
+                    %thead
+                        %th{:width => "100px"} Time
+                        %th{:width => "75px"} Length
+                        %th Activity
+                    %tbody
+                        %tr
+                            %td 7:00 – 7:30
+                            %td 30 minutes
+                            %td Arrival/Breakfast
+                        %tr
+                            %td 7:30 – 7:45
+                            %td 15 minutes
+                            %td Morning Meeting – a joyful celebration and preparation for learning
+                        %tr
+                            %td 7:45 – 8:15
+                            %td 30 minutes
+                            %td Read Aloud
+                        %tr
+                            %td 8:15 – 9:15
+                            %td 1 hour
+                            %td Reading Block I (Small Group Activities and Instruction / 5 Students)
+                        %tr
+                            %td 9:15 – 10:15
+                            %td 1 hour
+                            %td Reading/Tutors (Small Group Activities and Instruction / 5 Students)
+                        %tr
+                            %td 10:15 – 10:30
+                            %td 15 minutes
+                            %td Snack/Recess
+                        %tr
+                            %td 10:30 – 11:30
+                            %td 1 hour
+                            %td Reading Block II (Small Group Activities and Instruction / 5 Students)
+                        %tr
+                            %td 11:30 – 12:00
+                            %td 30 minutes
+                            %td Math/Tutors (Small Group / 5 Students)
+                        %tr
+                            %td 12:00 – 12:30
+                            %td 30 minutes
+                            %td Lunch/Recess
+                        %tr
+                            %td 12:30 – 1:00
+                            %td 30 minutes
+                            %td PAL - Physically Active Learning (Small Group / 5 Students)
+                        %tr
+                            %td 1:00 – 1:30
+                            %td 30 minutes
+                            %td Math
+                        %tr
+                            %td 1:30 – 2:00
+                            %td 30 minutes
+                            %td Math (Small Group / 10 Students)
+                        %tr
+                            %td 2:00 – 2:15
+                            %td 15 minutes
+                            %td Recess
+                        %tr
+                            %td 2:15 – 3:00
+                            %td 45 minutes
+                            %td Science/Social Studies
+                        %tr
+                            %td 3:00 – 3:45
+                            %td 45 minutes
+                            %td Specials:  Music/Art/Dance/Fitness/Spanish
+                        %tr
+                            %td 3:45
+                            %td
+                            %td Dismissal
