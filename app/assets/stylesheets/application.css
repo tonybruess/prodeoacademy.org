@@ -218,6 +218,14 @@ li.lead {
     margin-bottom: 5px;
 }
 
+.mini-lead {
+    font-size: 18px;
+}
+
+blockquote {
+    border-left: 4px solid rgb(159, 20, 22);
+}
+
 /* *
    * PANELS
    *
