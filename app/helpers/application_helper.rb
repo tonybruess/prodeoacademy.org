@@ -17,4 +17,8 @@ module ApplicationHelper
     def urlify(str)
         str.gsub("Our ", "").gsub("A ", "").downcase.gsub(/\s+/, "_").gsub(/\W+/, "")
     end
+
+    def placehold(x, y)
+        "//placehold.it/" + x + "x" + y + "&text=Coming%20soon!&break.png"
+    end
 end
