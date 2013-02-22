@@ -36,3 +36,5 @@ namespace :deploy do
         end
     end
 end
+
+require 'capistrano-unicorn'
