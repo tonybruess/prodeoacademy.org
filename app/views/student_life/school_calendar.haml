@@ -3,18 +3,22 @@
         .span12#panel-main
             .content
                 %h2 School Calendar
-                %p.lead Important dates
-                %table.table.table-bordered.table-striped.table-hover
-                    %thead
-                        %th{:width => "100px"} Day
-                        %th Description
-                    %tbody
-                        %tr
-                            %td July, 2013
-                            %td Student and Family Orientation
-                        %tr
-                            %td August 22, 2013
-                            %td Kindergarten Orientation begins.  Kindergarteners will have half days on August 22nd through August 30th.
-                        %tr
-                            %td June 19, 2014
-                            %td Last day of school
+                .row
+                    .span8
+                        %p.lead Important dates
+                        %table.table.table-bordered.table-striped.table-hover
+                            %thead
+                                %th{:width => "100px"} Day
+                                %th Description
+                            %tbody
+                                %tr
+                                    %td July, 2013
+                                    %td Student and Family Orientation
+                                %tr
+                                    %td August 22, 2013
+                                    %td Kindergarten Orientation begins.  Kindergarteners will have half days on August 22nd through August 30th.
+                                %tr
+                                    %td June 19, 2014
+                                    %td Last day of school
+                    .span4
+                        %img{:src => "/assets/placeholders/six.jpg"}
