@@ -18,7 +18,7 @@ staging:
   sessions:
     default:
       hosts:
-        - dal02.oc.tc:27017
+        - 10.1.10.2:27017
       database: prodeo-prod
 
 production:
