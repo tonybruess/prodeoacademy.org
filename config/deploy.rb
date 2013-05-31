@@ -16,7 +16,7 @@ set :deploy_to, "/home/deploy/apps/prodeo2"
 set :user, 'deploy'
 set :port, 50210
 
-server '204.11.62.10', :app, :db, :web, :primary => true # dal02
+server 'a.dal02.oc.tc', :app, :db, :web, :primary => true # dal02
 
 default_environment["RAILS_ENV"] = 'production'
 
