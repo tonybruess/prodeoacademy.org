@@ -8,9 +8,15 @@
                         %p.lead Important dates
                         %table.table.table-bordered.table-striped.table-hover
                             %thead
-                                %th{:width => "100px"} Day
+                                %th{:width => "175px"} Day
                                 %th Description
                             %tbody
+                                %tr
+                                    %td Monday, June 17th, 2013
+                                    %td
+                                        Lottery
+                                        %br
+                                        %a{:href => "#lottery-info", :data => {:toggle => "modal"}} Click for lottery information
                                 %tr
                                     %td July, 2013
                                     %td Student and Family Orientation
@@ -22,3 +28,11 @@
                                     %td Last day of school
                     .span4
                         %img{:src => "/assets/placeholders/six.jpg"}
+#lottery-info.modal.hide.fade
+    .modal-header
+        %button.close{:type => "button", :data => {:dismiss => "modal"}} x
+        %h3 Lottery Information
+    .modal-body
+        %p Kindergarten admission to Prodeo Academy is determined through a randomized lottery if the number of applicants exceeds the number of openings. A pre-determined number of spaces will be determined each year based on the school’s capacity.
+        %p The admission process shall be conducted through a randomized selection protocol until all lottery selections have been confirmed, at which point a wait list shall be maintained. The wait list will be in effect for the duration of the school year.
+        %p Once the wait list has been exhausted, open seats will be filled on a first-come first-served basis.
