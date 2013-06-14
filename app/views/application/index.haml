@@ -85,45 +85,4 @@
         %button.close{:type => "button", :data => {:dismiss => "modal"}} x
         %h3 Supporters
     .modal-body
-        %p
-            %i Thank you to all the individuals, corporations, and foundations that have contributed services and support.
-        %p
-            %b Support from Individuals
-        %ul.unstyled
-            %li
-                %i Carolyn and Dane Anderson
-            %li
-                %i Tony Bruess
-            %li
-                %i Mary Lou and Ray Barton
-            %li
-                %i Jane and Greg Goven 
-            %li
-                %i Nancy and John Lawlor  
-            %li
-                %i Mary McGreevy
-            %li
-                %i Mary Sue Payne
-            %li
-                %i Ann and Pat Ryan 
-        %p
-            %b Support from Coporations and Foundations
-        %ul.unstyled
-            %li
-                %i Fredrikson & Byron, P.A.
-            %li
-                %i General Mills Foundation
-            %li
-                %i Heartland Investigative Group
-            %li
-                %i The Lawlor Group
-            %li
-                %i Lillehei Family Foundation
-            %li
-                %i Minneapolis Foundation
-            %li
-                %i Mulvehill Family Foundation
-            %li
-                %i Tierney Brothers Inc.
-            %li
-                %i Walton Family Foundation
+        = render :partial => "_partials/partners"
