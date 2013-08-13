@@ -234,6 +234,10 @@ blockquote {
     border-left: 4px solid rgb(159, 20, 22);
 }
 
+footer span {
+    padding: 10px;
+}
+
 /* *
    * PANELS
    *
