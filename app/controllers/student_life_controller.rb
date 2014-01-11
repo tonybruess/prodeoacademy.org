@@ -8,4 +8,7 @@ class StudentLifeController < ApplicationController
 
 	def academics
 	end
+
+    def community_meeting
+    end
 end
