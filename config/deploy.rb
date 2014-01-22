@@ -3,9 +3,7 @@ require "rvm/capistrano"
 load "deploy/assets"
 
 set :rvm_ruby_string, "ruby-2.0.0-p353"
-set :rvm_type, :user
-set :rvm_path, "$HOME/.rvm"
-set :rvm_bin_path, "$HOME/.rvm/bin"
+set :rvm_type, :system
 
 set :application, "prodeo2"
 set :repository, "git@github.com:mrapple/prodeoacademy.org.git"
