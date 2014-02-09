@@ -6,8 +6,8 @@
                     %h1 College Starts Here
                     %p.lead Enroll your child today
                     %a.btn.btn-large.btn-inverse{:href => "/about/who_we_are"} More info &raquo;
-            - (1..15).to_a.shuffle.each do |i|
-                .item{:class => i == 1 ? 'active' : ''}
+            - (1..15).to_a.shuffle.each_with_index do |i, j|
+                .item{:class => j == 0 ? 'active' : ''}
                     %img{:src => asset_path("index/#{i}.jpg")}
 .container
     .row.center#index
