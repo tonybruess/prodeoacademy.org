@@ -3,7 +3,7 @@
         .span12.panel#panel-main
             .content
                 %h2 Co-Founders
-                .row
+                .row-fluid
                     .span3
                         = render :partial => "staff", :locals => {:name => "Rick Campion", :role => "Executive Director"}
                     .span9
@@ -11,7 +11,7 @@
                         %p.mini-lead.text-info rickcampion@prodeoacademy.org
                         %p.mini-lead.text-info (612) 559-4881
                 %br
-                .row
+                .row-fluid
                     .span9
                         %p.lead Chancey has taught for ten years at the elementary, middle, and high school levels and has developed school-wide and network-wide curricula at each level. She taught for several years for the Cristo Rey Network in Minneapolis and for the Uncommon Schools Network in NY. She also has her Master's Degree as a Literacy Specialist from Columbia University.
                         %p.mini-lead.text-info chanceyanderson@prodeoacademy.org
@@ -21,17 +21,17 @@
                         = render :partial => "staff", :locals => {:name => "Chancey Anderson", :role => "Principal"}
                 %br
                 %h3 Classroom Teachers
-                .row
+                .row-fluid
                     .span12
                         %ul.thumbnails
                             %li.span3
-                                = render :partial => "staff", :locals => {:name => "Rachel Hemsey", :role => "Kindergarten Teacher/Leadership Team Member"}
+                                = render :partial => "staff", :locals => {:name => "Rachel Hemsey", :role => "Kindergarten Teacher, Leadership Team Member"}
                             %li.span3
                                 = render :partial => "staff", :locals => {:name => "Mandy Lindstrom", :role => "Kindergarten Teacher"}
                             %li.span3
                                 = render :partial => "staff", :locals => {:name => "Ashley Willeck", :role => "Kindergarten Teacher"}
                 %h3 Core and Electives
-                .row
+                .row-fluid
                     .span12
                         %ul.thumbnails
                             %li.span3
@@ -39,13 +39,13 @@
                             %li.span3
                                 = render :partial => "staff", :locals => {:name => "Camille Sypura", :role => "Core Teacher"}
                 %h3 External Relations and Literacy Support
-                .row
+                .row-fluid
                     .span12
                         %ul.thumbnails
                             %li.span3
                                 = render :partial => "staff", :locals => {:name => "Kelly Mulvehill", :role => "External Relations Director"}
                 %h3 Office and Academic Support
-                .row
+                .row-fluid
                     .span12
                         %ul.thumbnails
                             %li.span3

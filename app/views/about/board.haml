@@ -4,7 +4,7 @@
             .content
                 %h2 Board of Directors
                 %p Our board of directors has a wide variety of experience and expertise. Of our 10 members, six have significant experience in education and academics. We also have several board members with strong experience in finance, development, governance, and community relations.
-                .row
+                .row-fluid
                     .span12
                         %ul.thumbnails#board
                             = render :partial => "board", :locals => {:name => "John Alexander", :role => "Board Chair, Head of School, Groves Academy"}
@@ -15,14 +15,14 @@
                             = render :partial => "board", :locals => {:name => "Chancey Anderson", :role => "Co-Founder, Principal, Prodeo Academy; Lead Teacher, Uncommon"}
                             = render :partial => "board", :locals => {:name => "Rick Campion", :role => "Co-Founder, Executive Director, Prodeo Academy - Ex-Officio"}
                 %h2 Community Engagment Committe
-                .row
+                .row-fluid
                     .span12
                         %ul.thumbnails#board
                             = render :partial => "board", :locals => {:name => "Kerry Givens", :role => "Executive Director, South Minneapolis YMCA"}
                             = render :partial => "board", :locals => {:name => "Neda Kellogg", :role => "Founder and CEO, Project Diva"}
                             = render :partial => "board", :locals => {:name => "Vidal Guzm&aacute;n", :role => "Senior Manager at Public Radio International"}
                 %h3 Board Meetings
-                .row
+                .row-fluid
                     .span12
                         %p
                             Our Board meets every fourth Wednesday of the month at 5:30pm at
