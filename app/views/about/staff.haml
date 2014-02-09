@@ -5,11 +5,7 @@
                 %h2 Co-Founders
                 .row
                     .span3
-                        .thumbnail
-                            %img{:src => "/assets/board/rick_campion.png"}
-                            .caption
-                                %h4 Rick Campion
-                                %p Executive Director
+                        = render :partial => "staff", :locals => {:name => "Rick Campion", :role => "Executive Director"}
                     .span9
                         %p.lead Rick has experience in developing successful schools for children in Minneapolis. He was a member of the founding leadership team of Cristo Rey Jesuit High School in the Phillips neighborhood of South Minneapolis and the founding board of directors of Minneapolis College Preparatory. He has 14 years of experience as a teacher, and eight years in school administration.
                         %p.mini-lead.text-info rickcampion@prodeoacademy.org
@@ -22,92 +18,35 @@
                         %p.mini-lead.text-info (347) 982-5061
 
                     .span3
-                        .thumbnail
-                            %img{:src => "/assets/board/chancey_anderson.png"}
-                            .caption
-                                %h4 Chancey Anderson
-                                %p Principal
+                        = render :partial => "staff", :locals => {:name => "Chancey Anderson", :role => "Principal"}
                 %br
                 %h3 Classroom Teachers
                 .row
                     .span12
                         %ul.thumbnails
-                            %li.span4
-                                .thumbnail
-                                    %img{:src => asset_path('board/rachel_hemsey.png')}
-                                    .caption
-                                        %h4 Rachel Hemsey
-                                        %small Kindergarten Teacher/Leadership Team Member
-                                        %br
-                                        %small
-                                            %a{:href => "mailto:rachelhemsey@prodeoacademy.org"} rachelhemsey@prodeoacademy.org
-                            %li.span4
-                                .thumbnail
-                                    %img{:src => asset_path('board/mandy_lindstrom.png')}
-                                    .caption
-                                        %h4 Mandy Lindstrom
-                                        %small Kindergarten Teacher
-                                        %br
-                                        %small
-                                            %a{:href => "mailto:mandylindstrom@prodeoacademy.org"} mandylindstrom@prodeoacademy.org
-                            %li.span4
-                                .thumbnail
-                                    %img{:src => asset_path('board/ashley_willeck.png')}
-                                    .caption
-                                        %h4 Ashley Willeck
-                                        %small Kindergarten Teacher
-                                        %br
-                                        %small
-                                            %a{:href => "mailto:ashleywilleck@prodeoacademy.org"} ashleywilleck@prodeoacademy.org
-
+                            %li.span3
+                                = render :partial => "staff", :locals => {:name => "Rachel Hemsey", :role => "Kindergarten Teacher/Leadership Team Member"}
+                            %li.span3
+                                = render :partial => "staff", :locals => {:name => "Mandy Lindstrom", :role => "Kindergarten Teacher"}
+                            %li.span3
+                                = render :partial => "staff", :locals => {:name => "Ashley Willeck", :role => "Kindergarten Teacher"}
                 %h3 Core and Electives
                 .row
                     .span12
                         %ul.thumbnails
-                            %li.span4
-                                .thumbnail
-                                    %img{:src => asset_path('board/jordan_sallis.png')}
-                                    .caption
-                                        %h4 Jordan Sallis
-                                        %small Fitness Coordinator
-                                        %br
-                                        %small
-                                            %a{:href => "mailto:jordansallis@prodeoacademy.org"} jordansallis@prodeoacademy.org
-                            %li.span4
-                                .thumbnail
-                                    %img{:src => "//placehold.it/175x200"}
-                                    .caption
-                                        %h4 Camille Sypura
-                                        %small Core Teacher
-                                        %br
-                                        %small
-                                            %a{:href => "mailto:camillesypura@prodeoacademy.org"} camillesypura@prodeoacademy.org
-
+                            %li.span3
+                                = render :partial => "staff", :locals => {:name => "Jordan Sallis", :role => "Fitness Coordinator"}
+                            %li.span3
+                                = render :partial => "staff", :locals => {:name => "Camille Sypura", :role => "Core Teacher"}
                 %h3 External Relations and Literacy Support
                 .row
                     .span12
                         %ul.thumbnails
-                            %li.span4
-                                .thumbnail
-                                    %img{:src => asset_path('board/kelly_mulvehill.png')}
-                                    .caption
-                                        %h4 Kelly Mulvehill
-                                        %small External Relations Director,
-                                        %br
-                                        %small Literacy and Mindfulness Teacher
-                                        %br
-                                        %small
-                                            %a{:href => "mailto:kellymulvehill@prodeoacademy.org"} kellymulvehill@prodeoacademy.org
+                            %li.span3
+                                = render :partial => "staff", :locals => {:name => "Kelly Mulvehill", :role => "External Relations Director"}
                 %h3 Office and Academic Support
                 .row
                     .span12
                         %ul.thumbnails
-                            %li.span4
-                                .thumbnail
-                                    %img{:src => asset_path('board/ady_perez.png')}
-                                    .caption
-                                        %h4 Ady Perez
-                                        %small Office and Teaching Assistant
-                                        %br
-                                        %small
-                                            %a{:href => "mailto:adyperez@prodeoacademy.org"} adyperez@prodeoacademy.org
+                            %li.span3
+                                = render :partial => "staff", :locals => {:name => "Ady Perez", :role => "Office and Teaching Assistant"}

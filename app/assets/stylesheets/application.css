@@ -238,6 +238,10 @@ footer span {
     padding: 10px;
 }
 
+ul, ol {
+    margin-bottom: 5px;
+}
+
 /* *
    * PANELS
    *
@@ -252,6 +256,7 @@ footer span {
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 15px;
 }
 
 #panel-left {
@@ -265,8 +270,8 @@ footer span {
 
 #panel-left .content {
     padding-left: 15px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 
 #panel-right {
@@ -281,6 +286,7 @@ footer span {
 #panel-right .content {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 15px;
 }
 
 #panel-right img {

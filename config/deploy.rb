@@ -13,6 +13,7 @@ set :branch, 'master'
 set :deploy_to, "/home/deploy/apps/prodeo2"
 set :user, 'deploy'
 set :port, 50210
+set :use_sudo, false
 
 server 'phx06.oc.tc', :app, :db, :web, :primary => true
 

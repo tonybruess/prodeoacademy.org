@@ -1,0 +1,10 @@
+.thumbnail
+    %img{:src => asset_path("board/#{urlify(name)}.png")}
+    .caption
+        %h4= name
+        %small= role
+        %br
+        %small
+            - email = email(name)
+            %a{:href => "mailto:#{email}"}= truncate email, :length => 29
+
