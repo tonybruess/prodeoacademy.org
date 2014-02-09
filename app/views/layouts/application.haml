@@ -2,16 +2,15 @@
 %html
     %head
         %title Prodeo Academy
-        %link{:href => "//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic", :rel => "stylesheet"}
-        %link{:href => "/assets/application.css", :rel => "stylesheet"}
-        %script{:src => "/assets/application.js"}
+        = stylesheet_link_tag "application", "//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic"
+        = javascript_include_tag "application"
     %body
         #top
         .container#header
             .row
                 .span4
                     %a#logo{:href => "/"}
-                        %img{:src => "/assets/logo.png"}
+                        %img{:src => asset_path('logo')}
                 .span8
                     .row
                         .well.well-small.pull-right#social
