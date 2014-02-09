@@ -10,7 +10,7 @@
         .container#header
             .row
                 .span4
-                    %a{:href => "/"}
+                    %a#logo{:href => "/"}
                         %img{:src => "/assets/logo.png"}
                 .span8
                     .row
@@ -52,8 +52,10 @@
             .container
                 .pull-left
                     %span &copy; Copyright 2013 Prodeo Academy
-                    |
+
+                .pull-right
                     %span 1555 40th Ave NE Minneapolis 55421
+            -#
                 .pull-right
                     %a{:href => "#"} Terms of Use
                     |
