@@ -5,48 +5,48 @@
         = stylesheet_link_tag "application", "//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic"
         = javascript_include_tag "application"
     %body
-        #top
-        .container#header
-            .row
-                .span4
-                    %a#logo{:href => "/"}
-                        %img{:src => asset_path('logo.png')}
-                .span8
-                    .row
-                        .well.well-small.pull-right#social
-                            .pull-left#facebook
-                                .fb-like{:data => {:href => "https://www.facebook.com/prodeoacademy", :send => "false", :layout => "button_count", :width => "450", :"show-faces" => "false"}}
-
-                            .pull-left#twitter
-                                %a.twitter-follow-button{:href => "https://twitter.com/ProdeoAcademy", :data => {:"show-count" => "false"}} Follow @ProdeoAcademy
-
-                    %ul.nav.nav-pills.pull-right#nav
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                About Prodeo
-                                %span.caret
-                            = submenu(["Who We Are", "Our History", "Our Staff", "Our Board", "Our Advisory Council", "Our Partners"], "About")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Our Approach
-                                %span.caret
-                            = submenu(["Our Mission", "Our Vision", "Our Core Values", "Our Family Partnership"], "Approach")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Student Life
-                                %span.caret
-                            = submenu(["A Typical Day", "School Calendar", "Academics", "Community Meeting"], "Student Life")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Results
-                                %span.caret
-                            = submenu(["Achievement Gap", "Our Results"], "Results")
-                        %li.dropdown-submenu
-                            %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
-                                Contact Us
-                                %span.caret
-                            = submenu(["Apply to Teach", "Apply to Tutor", "Volunteer", "Schedule a Visit"], "Contact")
-        = yield
+        #wrap
+            #top
+            .container#header
+                .row
+                    .span4
+                        %a#logo{:href => "/"}
+                            %img{:src => asset_path('logo.png')}
+                    .span8
+                        .row
+                            .well.well-small.pull-right#social
+                                .pull-left#facebook
+                                    .fb-like{:data => {:href => "https://www.facebook.com/prodeoacademy", :send => "false", :layout => "button_count", :width => "450", :"show-faces" => "false"}}
+                                .pull-left#twitter
+                                    %a.twitter-follow-button{:href => "https://twitter.com/ProdeoAcademy", :data => {:"show-count" => "false"}} Follow @ProdeoAcademy
+                        %ul.nav.nav-pills.pull-right#nav
+                            %li.dropdown-submenu
+                                %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                    About Prodeo
+                                    %span.caret
+                                = submenu(["Who We Are", "Our History", "Our Staff", "Our Board", "Our Advisory Council", "Our Partners"], "About")
+                            %li.dropdown-submenu
+                                %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                    Our Approach
+                                    %span.caret
+                                = submenu(["Our Mission", "Our Vision", "Our Core Values", "Our Family Partnership"], "Approach")
+                            %li.dropdown-submenu
+                                %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                    Student Life
+                                    %span.caret
+                                = submenu(["A Typical Day", "School Calendar", "Academics", "Community Meeting"], "Student Life")
+                            %li.dropdown-submenu
+                                %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                    Results
+                                    %span.caret
+                                = submenu(["Achievement Gap", "Our Results"], "Results")
+                            %li.dropdown-submenu
+                                %a.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                                    Contact Us
+                                    %span.caret
+                                = submenu(["Apply to Teach", "Apply to Tutor", "Volunteer", "Schedule a Visit"], "Contact")
+            = yield
+            #push
         %footer
             .container
                 .pull-left

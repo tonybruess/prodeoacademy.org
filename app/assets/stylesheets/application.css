@@ -21,6 +21,21 @@ body {
     background-color: #F1F1FA;
 }
 
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px;
+}
+
+#push {
+    height: 40px;
+}
+
 #top {
     margin: 0;
     background-color: #fff;
@@ -32,7 +47,7 @@ body {
 }
 
 #header {
-    padding-top: 10px;
+    padding: 20px;
     padding-bottom: 10px;
 }
 
@@ -247,46 +262,44 @@ ul, ol {
    *
    *
    */
-#panel-main {
-    background-color: white;
+.panel {
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-    margin-left: 0;
-    min-height: 400px;
-    z-index: 1000;
+    background-color: white;
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+.panel .content {
     padding-bottom: 15px;
+}
+
+#panel-main {
+    z-index: 1000;
 }
 
 #panel-left {
     background-color: #f7f7f7;
     z-index: -2;
-    position: relative;
-    margin-top: 45px;
-    min-height: 150px;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-}
-
-#panel-left .content {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    margin-top: 19px;
 }
 
 #panel-right {
-    background-color: white;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-    margin-left: 0;
-    min-height: 400px;
     z-index: 1000;
-    position: relative;
+    margin-left: 0;
 }
 
-#panel-right .content {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
+#panel-left, #panel-right {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#panel-main .content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#panel-left .content, #panel-right .content {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #panel-right img {
@@ -350,3 +363,6 @@ ul, ol {
 .thumbnails#council li {
     height: 125px;
 }
+
+/* *
+   * Remove extra spacing
