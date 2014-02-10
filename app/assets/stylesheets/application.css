@@ -129,12 +129,10 @@ ul.dropdown-menu li a:hover {
 	box-shadow: 0 5px 10px -5px #000;
 	position: relative;
 	z-index: 3;
-    width: 940px;
 }
 
-.container#carousel {
-    width: 900px;
-    height: 475px;
+.carousel#academics {
+    width: 910px;
 }
 
 .carousel .container {
@@ -201,6 +199,8 @@ ul.dropdown-menu li a:hover {
 
 footer {
     background-color: #922628;
+    z-index: 2000;
+    position:relative
 }
 
 footer, footer a {

@@ -1,11 +1,11 @@
 .container
-    #carousel.carousel.slide
+    .carousel.slide
         .carousel-inner
             .container
                 .carousel-caption
                     %h1 College Starts Here
                     %a.btn.btn-large.btn-inverse{:href => "/about/who_we_are"} Enroll your child today &raquo;
-            - (1..15).to_a.shuffle.each_with_index do |i, j|
+            - (1..17).to_a.shuffle.each_with_index do |i, j|
                 .item{:class => j == 0 ? 'active' : ''}
                     %img{:src => asset_path("index/#{i}.jpg")}
 .container

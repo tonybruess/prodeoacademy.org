@@ -18,9 +18,7 @@
 
 $(document).ready(function() {
     $("[rel=tooltip]").tooltip({placement: 'right'});
-    $('#carousel').carousel({
-        pause : "false"
-    });
+    $('.carousel').carousel({pause : 'false'});
 
 });
 
