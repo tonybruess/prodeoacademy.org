@@ -22,9 +22,6 @@
                             %a{:href => asset_path('handout_two.pdf'), :target => "_blank"} Why choose Prodeo Academy?
                         %li.divider
                         %li
-                            %a{:href => "#"} Student Application
-                        %li.divider
-                        %li
                             %a{:href => "#stay-in-touch", :data => {:toggle => "modal"}} Stay in Touch
         .span4
             .hero-unit#donors
@@ -38,7 +35,7 @@
                             %a{:href => asset_path('handout_one.pdf'), :target => "_blank"} Why choose Prodeo Academy?
                         %li.divider
                         %li
-                            %a{:href => asset_path('handout_four.pdf')} Who we are looking for
+                            %a{:href => asset_path('handout_four.pdf'), :target => "_blank"} Who we are looking for
                         %li.divider
                         %li
                             %a{:href => "/contact/apply_to_teach"} Apply to Teach
@@ -52,18 +49,8 @@
             .hero-unit#tutors
                 %h3 Build the Future
                 .btn-group.dropup
-                    %a.btn.btn-large.dropdown-toggle{:href => "#", :data => {:toggle => "dropdown"}}
+                    %a.btn.btn-large{:href => "http://givemn.razoo.com/story/Education-Prodeo-Academy", :target => "_blank"}
                         Donate Today
-                        %span.caret
-                    %ul.dropdown-menu
-                        %li
-                            %a{:href => asset_path('handout_three.pdf'), :target => "_blank"} Why choose Prodeo Academy?
-                        %li.divider
-                        %li
-                            %a{:href => "#supporters", :data => {:toggle => "modal"}} Supporters
-                        %li.divider
-                        %li
-                            %a{:href => "http://givemn.razoo.com/story/Education-Prodeo-Academy"} Invest
 #stay-in-touch.modal.hide.fade
     .modal-header
         %button.close{:type => "button", :data => {:dismiss => "modal"}} x
