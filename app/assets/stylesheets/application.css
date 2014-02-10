@@ -142,9 +142,7 @@ ul.dropdown-menu li a:hover {
     right: 0;
     bottom: 0;
     left: 0;
-    top: 175px;
-    padding-left: 40px;
-    width: 900px;
+    top: 0;
 	z-index: 1000;
 }
 
@@ -161,26 +159,20 @@ ul.dropdown-menu li a:hover {
 .carousel-caption {
     background-color: transparent;
     position: static;
-    max-width: 650px;
-    padding: 0 20px;
-    margin-bottom: 100px;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .carousel-caption h1 {
     font-size: 60px;
-}
-
-.carousel-caption h1,
-.carousel-caption p.lead {
     margin: 0;
     line-height: 1.25;
     color: #fff;
     text-shadow: 0 2px 10px rgba(0,0,0,.8);
-    margin-top: 5px;
 }
 
 .carousel-caption .btn {
-    margin-top: 15px;
+    margin-top: 305px;
 }
 
 .center {
