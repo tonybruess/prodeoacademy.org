@@ -6,8 +6,10 @@
         .span8.panel#panel-right
             .content
                 %h2 Our Partners
-                %p We are currently partnering with several preschools in order to help bridge the gap and provide our students with a smoother transition from preschool to kindergarten.
-                %p We are also currently partnering with several universities who have provided resources, volunteers, and tutors.
-                %p Furthermore, community resources have been an important connection.
-                %p We look to continue to develop partnerships that help us support our students and families and close the gap.
-                = render :partial => "_partials/partners"
+                %p
+                    %i Thank you to all the individuals, corporations, and foundations that have contributed services and support.
+                = render :partial => "partners", :locals => {:title => "Support from Individuals", :partners => ["Carolyn and Dane Anderson", "Tony Bruess", "Nancy and John Lawlor", "Mary McGreevy", "Mary Sue Payne"]}
+                %br
+                = render :partial => "partners", :locals => {:title => "Support from Coporations and Foundations", :partners => ["Amelia Ann Photography", "Boston Scientific", "CH Robinson", "Fredrikson & Byron, P.A.", "General Mills Foundation", "Heartland Investigative Group", "The Lawlor Group", "Leonard, Street and Deinard", "Lillehei Family Foundation", "Minneapolis Foundation", "Tierney Brothers Inc.", "Walton Family Foundation"]}
+                %br
+                = render :partial => "partners", :locals => {:title => "Tutoring Partners", :partners => ["A&P Construction", "General Mills", "Leonard Street Deinard", "Meristem", "Ryan Companies", "Target"]}
