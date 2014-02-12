@@ -3,6 +3,12 @@
         .span12.panel#panel-main
             .content
                 %h2 Academics
+                .container
+                    .carousel.slide#academics
+                        .carousel-inner
+                            - (1..10).to_a.shuffle.each_with_index do |i, j|
+                                .item{:class => j == 0 ? 'active' : ''}
+                                    %img{:src => asset_path("student_life/academics/#{i}.jpg")}
                 %p.lead Prodeo Academy is committed to providing a meaningful, individualized, joyful learning experience for every student.
                 %p
                     The center of a Prodeo Academy education is a
@@ -11,12 +17,6 @@
                     %u proven, successful methods of teaching
                     at some of the highest performing schools in the country, the curriculum at Prodeo Academy prepares each child for college beginning on the first day of kindergarten.
                 %p Prodeo Academy uses research-based, proven curriculum - and we measure the results every step of the way.
-                .container
-                    .carousel.slide#academics
-                        .carousel-inner
-                            - (1..9).to_a.shuffle.each_with_index do |i, j|
-                                .item{:class => j == 0 ? 'active' : ''}
-                                    %img{:src => asset_path("student_life/academics/#{i}.jpg")}
                 %p.lead  Focus on Literacy and Numeracy
                 %p The ability to read well and understand mathematics are the most important factors in a students' success in school.
                 %p At Prodeo Academy, we emphasize literacy and numeracy. Every one of our students has over 90 minutes of language arts instruction (phonics, reading comprehension, and vocabulary) daily. Our students also have over 90 minutes of math instruction each day. Social studies and science are also important components of our curriculum.
