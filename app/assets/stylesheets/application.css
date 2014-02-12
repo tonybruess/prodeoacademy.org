@@ -365,4 +365,10 @@ ul, ol {
 }
 
 /* *
-   * Remove extra spacing
+   * VALUES
+   *
+   */
+#values {
+    word-spacing: 2.8em;
+    margin: 25px 0;
+}
