@@ -5,26 +5,97 @@
                 %h2 School Calendar
                 .row-fluid
                     .span8
-                        %p.lead Important dates
+                        %p
+                            %span.label.label-success No school for scholars, staff have professional development (PD)
+                            %span.label.label-info No school for scholars or staff
                         %table.table.table-bordered.table-striped.table-hover
                             %thead
                                 %th{:width => "175px"} Day
                                 %th Description
                             %tbody
+                                -#
+                                    %tr
+                                        %td June 17, 2013
+                                        %td
+                                            Lottery -
+                                            %a{:href => "#lottery-info", :data => {:toggle => "modal"}} Click for lottery information
+                                %tr.success
+                                    %td August 5-19, 2013
+                                    %td Staff PD
                                 %tr
-                                    %td Monday, June 17th, 2013
-                                    %td
-                                        Lottery -
-                                        %a{:href => "#lottery-info", :data => {:toggle => "modal"}} Click for lottery information
-                                %tr
-                                    %td July, 2013
-                                    %td Student and Family Orientation
+                                    %td August 21, 2013
+                                    %td First day of school for Class 1
                                 %tr
                                     %td August 22, 2013
-                                    %td Kindergarten Orientation begins. Kindergarteners have half days on August 22nd through August 30th.
+                                    %td First day of school for Class 2
+                                %tr
+                                    %td August 23, 2013
+                                    %td First day of school for Class 3
+                                %tr
+                                    %td August 26 - 30, 2013
+                                    %td Half day for all scholars
+                                %tr.info
+                                    %td September 2, 2013
+                                    %td Labor Day
+                                %tr
+                                    %td September 3, 2013
+                                    %td First full day
+                                %tr.success
+                                    %td October 4, 2013
+                                    %td Staff PD - No school for scholars
+                                %tr.success
+                                    %td October 16, 2013
+                                    %td Staff PD - No school for scholars
+                                %tr.info
+                                    %td October 17 - 18, 2013
+                                    %td MEA
+                                %tr.success
+                                    %td November 15, 2013
+                                    %td Staff PD - No school for scholars
+                                %tr
+                                    %td November 21, 2013
+                                    %td
+                                        %b Parent-Teacher conferences (12pm early dismissal)
+                                %tr.info
+                                    %td November 27 - 29, 2013
+                                    %td Thanksgiving
+                                %tr.info
+                                    %td December 23, 2013
+                                    %td Winter break begins
+                                %tr
+                                    %td January 2, 2014
+                                    %td School resumes
+                                %tr.info
+                                    %td January 20, 2014
+                                    %td MLK
+                                %tr.success
+                                    %td January 31, 2014
+                                    %td Staff PD - No school for scholars
+                                %tr.info
+                                    %td February 14-18, 2014
+                                    %td Mid-winter recess
+                                %tr.success
+                                    %td March 21, 2014
+                                    %td Staff PD - No school for scholars
+                                %tr.info
+                                    %td March 24 - 28, 2014
+                                    %td Spring break
+                                %tr
+                                    %td April 2, 2014
+                                    %td
+                                        %b Parent-Teacher conferences (12pm early dismissal)
+                                %tr.success
+                                    %td April 11, 2014
+                                    %td Staff PD - No school for scholars
+                                %tr.success
+                                    %td April 21, 2014
+                                    %td Staff PD - No school for scholars
+                                %tr.info
+                                    %td May 26, 2014
+                                    %td Memorial Day
                                 %tr
                                     %td June 19, 2014
-                                    %td Last day of school
+                                    %td Last day of school for scholars - stepping up
                     .span4
                         %img{:src => asset_path('student_life/calendar.jpg')}
 #lottery-info.modal.hide.fade
