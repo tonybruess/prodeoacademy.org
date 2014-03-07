@@ -17,9 +17,12 @@
 //= require_tree .
 
 $(document).ready(function() {
-    $("[rel=tooltip]").tooltip({placement: 'right'});
+    $('.youtube').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
     $('.carousel').carousel({pause : 'false'});
 
+    $('#stop-video').click(function() {
+        $('#video').attr('src', $('#video').attr('src'));
+    });
 });
 
 (function(d, s, id) {

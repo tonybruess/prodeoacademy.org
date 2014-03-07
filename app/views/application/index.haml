@@ -3,9 +3,11 @@
         .carousel-inner
             .container
                 .carousel-caption
+                    %a{:href => "#youtube", :data => {:toggle => "modal"}}
+                        %img.youtube.pull-left{:src => asset_path('youtube.png'), :rel => "tooltip", :title => "Watch our video"}
                     %h1 College Starts Here
                     %a.btn.btn-large.btn-inverse{:href => "/about/who_we_are"} Enroll your child today &raquo;
-            - (1..17).to_a.shuffle.each_with_index do |i, j|
+            - (1..16).to_a.shuffle.each_with_index do |i, j|
                 .item{:class => j == 0 ? 'active' : ''}
                     %img{:src => asset_path("index/#{i}.jpg")}
 .container
@@ -67,3 +69,9 @@
             %b Chancey Anderson, Principal
             %p.text-info chanceyanderson@prodeoacademy.org
             %p.text-info (347) 982-5061
+#youtube.modal.hide.fade
+    .modal-header
+        %button.close#stop-video{:type => "button", :data => {:dismiss => "modal"}} x
+        %h3 Video
+    .modal-body
+        %iframe#video{:width => "530px", :height => "325px", :src => "//www.youtube.com/embed/zxs4xAyPIXs", :frameborder => "0", :allowfullscreen => true}

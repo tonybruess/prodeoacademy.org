@@ -372,3 +372,12 @@ ul, ol {
     word-spacing: 2.8em;
     margin: 25px 0;
 }
+
+img.youtube {
+    min-width: 0;
+    min-height: 0;
+    width: 125px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
