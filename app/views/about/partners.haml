@@ -8,8 +8,10 @@
                 %h2 Our Partners
                 %p
                     %i Thank you to all the individuals, corporations, and foundations that have contributed services and support.
-                = render :partial => "partners", :locals => {:title => "Support from Individuals", :partners => ["Carolyn and Dane Anderson", "Tony Bruess", "Nancy and John Lawlor", "Mary McGreevy", "Mary Sue Payne"]}
-                %br
-                = render :partial => "partners", :locals => {:title => "Support from Coporations and Foundations", :partners => ["Amelia Ann Photography", "Boston Scientific", "CH Robinson", "Fredrikson & Byron, P.A.", "General Mills Foundation", "Heartland Investigative Group", "The Lawlor Group", "Leonard, Street and Deinard", "Lillehei Family Foundation", "Minneapolis Foundation", "Tierney Brothers Inc.", "Walton Family Foundation"]}
-                %br
-                = render :partial => "partners", :locals => {:title => "Tutoring Partners", :partners => ["A&P Construction", "General Mills", "Leonard Street Deinard", "Meristem", "Ryan Companies", "Target"]}
+                .row-fluid
+                    .span5
+                        = render :partial => "partners", :locals => {:title => "Support from Individuals", :partners => ProdeoacademyOrg::Application.config.individuals}
+                        %br
+                        = render :partial => "partners", :locals => {:title => "Tutoring Partners", :partners => ProdeoacademyOrg::Application.config.tutors}
+                    .span7
+                        = render :partial => "partners", :locals => {:title => "Support from Coporations and Foundations", :partners => ProdeoacademyOrg::Application.config.corporations}

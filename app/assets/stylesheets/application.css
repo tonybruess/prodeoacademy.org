@@ -352,7 +352,7 @@ ul, ol {
    * BOARD
    *
    */
-.thumbnails#board li {
+.thumbnails.board li {
     height: 350px;
 }
 

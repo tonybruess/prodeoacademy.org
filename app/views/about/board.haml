@@ -6,18 +6,20 @@
                 %p Our board of directors has a wide variety of experience and expertise. Of our 10 members, six have significant experience in education and academics. We also have several board members with strong experience in finance, development, governance, and community relations.
                 .row-fluid
                     .span12
-                        %ul.thumbnails#board
+                        %ul.thumbnails.board
                             = render :partial => "board", :locals => {:name => "John Alexander", :role => "Board Chair, Head of School, Groves Academy"}
                             = render :partial => "board", :locals => {:name => "Tara Stone", :role => "Community and Church Liaison, North Minneapolis"}
+                            = render :partial => "board", :locals => {:name => "Rachel Hemsey", :role => "Teacher at Prodeo Academy"}
+                            = render :partial => "board", :locals => {:name => "Doug Jaeger", :role => "Treasurer, Former CEO of Adolfson & Peterson"}
+                        %ul.thumbnails.board
                             = render :partial => "board", :locals => {:name => "Lidibette Rosado-Guzm&aacute;n", :role => "Diversity Coordinator, World Language Teacher"}
                             = render :partial => "board", :locals => {:name => "Jill Johnson", :role => "Board Secretary, Senior Business Analyst, Target"}
-                            = render :partial => "board", :locals => {:name => "Doug Jaeger", :role => "Treasurer, Former CEO of Adolfson & Peterson"}
                             = render :partial => "board", :locals => {:name => "Chancey Anderson", :role => "Co-Founder, Principal, Prodeo Academy; Lead Teacher, Uncommon"}
                             = render :partial => "board", :locals => {:name => "Rick Campion", :role => "Co-Founder, Executive Director, Prodeo Academy - Ex-Officio"}
                 %h2 Community Engagment Committe
                 .row-fluid
                     .span12
-                        %ul.thumbnails#board
+                        %ul.thumbnails.board
                             = render :partial => "board", :locals => {:name => "Kerry Givens", :role => "Executive Director, South Minneapolis YMCA"}
                             = render :partial => "board", :locals => {:name => "Neda Kellogg", :role => "Founder and CEO, Project Diva"}
                             = render :partial => "board", :locals => {:name => "Vidal Guzm&aacute;n", :role => "Senior Manager at Public Radio International"}
