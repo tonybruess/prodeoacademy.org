@@ -20,8 +20,12 @@ $(document).ready(function() {
     $('.youtube').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
     $('.carousel').carousel({pause : 'false'});
 
-    $('#stop-video').click(function() {
-        $('#video').attr('src', $('#video').attr('src'));
+    $('#youtube').on('shown', function() {
+        $('#video').attr('src', $('#video').attr('ssrc'));
+    });
+
+    $('#youtube').on('hidden', function() {
+        $('#video').attr('src', '');
     });
 });
 
