@@ -6,9 +6,9 @@ ProdeoacademyOrg::Application.initialize!
 
 ProdeoacademyOrg::Application.configure do
     config.individuals = [
-        "Carolyn and Dane Anderson",
+        "Dane and Carolyn Anderson",
         "Tony Bruess",
-        "Nancy and John Lawlor",
+        "John and Nancy Lawlor",
         "Mary McGreevy",
         "Mary Sue Payne",
         "Lowell Stortz",
@@ -16,7 +16,10 @@ ProdeoacademyOrg::Application.configure do
         "John and Margie Wiehoff",
         "Chad and Julie Lindbloom",
         "Steve and Carolyn Weiby",
-    ].sort!
+        "Pat and Ann Ryan",
+    ].sort do |a,b|
+        a.split(' ').last.downcase <=> b.split(' ').last.downcase
+    end
 
     config.corporations = [
         "Amelia Ann Photography",
