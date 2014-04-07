@@ -51,8 +51,7 @@
             .hero-unit#tutors
                 %h3 Build the Future
                 .btn-group.dropup
-                    %a.btn.btn-large{:href => "http://givemn.razoo.com/story/Education-Prodeo-Academy", :target => "_blank"}
-                        Donate Today
+                    %a.btn.btn-large{:href => "#donate", :data => {:toggle => "modal"}} Donate Today
 #stay-in-touch.modal.hide.fade
     .modal-header
         %button.close{:type => "button", :data => {:dismiss => "modal"}} x
@@ -75,3 +74,26 @@
         %h3 Video
     .modal-body
         %iframe#video{:width => "530px", :height => "325px", :ssrc => "//www.youtube.com/embed/zxs4xAyPIXs", :frameborder => "0", :allowfullscreen => true}
+#donate.modal.hide.fade
+    .modal-header
+        %button.close#stop-video{:type => "button", :data => {:dismiss => "modal"}} x
+        %h3 Donate Today
+    .modal-body
+        .row-fluid
+            .span6
+                %p.lead Donate online
+                %br
+                .center
+                    %a{:href => "http://givemn.razoo.com/story/Education-Prodeo-Academy", :target => "_blank"}
+                        %span Click to donate online
+                        %img{:src => asset_path('givemn.png')}
+            .span6
+                %p.lead Donate by mail
+                %p To make a contribution by mail, send a check to the address below, attention: Rick Campion.
+                %p
+                    Prodeo Academy
+                    %br
+                    1555 40th Ave NE
+                    %br
+                    Minneapolis, MN  55421
+                %p Federal Tax ID:  80-0743744
