@@ -1,7 +1,7 @@
 pid "/home/deploy/apps/prodeo/shared/pids/unicorn.pid"
 
 listen 3000
-worker_processes 2
+worker_processes 1
 timeout 30
 preload_app true
 stderr_path "/home/deploy/apps/prodeo/shared/log/unicorn.err.log"
