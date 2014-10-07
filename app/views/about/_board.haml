@@ -3,4 +3,5 @@
         %img{:src => asset_path("board/#{urlify(name)}.png")}
         .caption
             %h4= name.html_safe
-            %small= role
+            - if !role.nil?
+                %small= role
