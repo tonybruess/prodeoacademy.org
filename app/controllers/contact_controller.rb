@@ -1,6 +1,6 @@
 class ContactController < ApplicationController
 
-	def directions
+	def visit_prodeo_academy
 	end
 
 	def enroll_your_child
