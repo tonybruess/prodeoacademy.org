@@ -17,7 +17,11 @@
 //= require_tree .
 
 $(document).ready(function() {
-    $('.youtube').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+    // for some reason this needs to be delayed, otherwise it appears in the wrong place
+    setTimeout(function() {
+        $('.youtube').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+    }, 250);
+
     $('.carousel').carousel({pause : 'false'});
 
     $('#youtube').on('shown', function() {
@@ -30,11 +34,11 @@ $(document).ready(function() {
 });
 
 (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=185949604491";
-  fjs.parentNode.insertBefore(js, fjs);
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=185949604491";
+fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
