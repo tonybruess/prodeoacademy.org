@@ -233,6 +233,10 @@ footer a:hover {
     padding-bottom: 5px;
 }
 
+.content hr {
+    border-top: 3px solid rgb(159, 20, 22);
+}
+
 .lead {
     margin-bottom: 10px;
 }
