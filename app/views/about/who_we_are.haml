@@ -21,3 +21,11 @@
                 %p We invite you to learn more about our inspiring community by contacting Rick Campion, Executive Director.
                 %p rickcampion@prodeoacademy.org
                 %p (612) 559-4881
+                %a{:href => "#youtube", :data => {:toggle => "modal"}}
+                    %img.youtube.pull-left{:src => asset_path('youtube.png'), :rel => "tooltip", :title => "Watch our video", :data => {:position => "top"}}
+#youtube.modal.hide.fade
+    .modal-header
+        %button.close#stop-video{:type => "button", :data => {:dismiss => "modal"}} x
+        %h3 Video
+    .modal-body
+        %iframe#video{:width => "530px", :height => "328px", :ssrc => "//www.youtube.com/embed/zxs4xAyPIXs?autoplay=1", :frameborder => "0", :allowfullscreen => true}
