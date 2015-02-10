@@ -1,5 +1,5 @@
 .thumbnail
-    %img{:src => asset_path("board/#{urlify(name)}.png")}
+    %img{:src => asset_path("board/#{urlify(name)}.png"), :width => "175px"}
     .caption
         %h4= name
         - unless role.nil?
