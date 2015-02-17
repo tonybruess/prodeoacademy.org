@@ -1,7 +1,0 @@
-%li.span3
-    .thumbnail
-        %img{:src => asset_path("board/#{urlify(name)}.png")}
-        .caption
-            %h4= name.html_safe
-            - if !role.nil?
-                %small= role
