@@ -59,6 +59,15 @@ html, body {
     padding-bottom: 10px;
 }
 
+#benefit {
+    background: #212359;
+    padding: 20px 0;
+}
+
+#benefit a {
+    color: #f1f1fa;
+}
+
 #nav {
     margin-top: 55px;
     font-size: 15px;
