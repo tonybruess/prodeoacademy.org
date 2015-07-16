@@ -5,8 +5,9 @@
             %h4= name.html_safe
             - if local_assigns.has_key? :role
                 %small= role
-            - if local_assigns.has_key? :email && email
-                %small
-                    - email = email(name)
-                    %a{:href => "mailto:#{email}"}= truncate email, :length => 26
+            - if local_assigns.has_key? :email
+                - if email
+                    %small
+                        - email = email_for(name)
+                        %a{:href => "mailto:#{email}"}= truncate email, :length => 26
 

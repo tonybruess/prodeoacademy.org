@@ -1,5 +1,5 @@
 module AboutHelper
-    def email(name)
+    def email_for(name)
         name.downcase.gsub(" ", "") + "@prodeoacademy.org"
     end
 end
