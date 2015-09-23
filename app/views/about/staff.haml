@@ -16,35 +16,39 @@
                         %p.mini-lead.text-info chanceyanderson@prodeoacademy.org
                         %p.mini-lead.text-info (347) 982-5061
                     = render :partial => "person", :locals => {:name => "Chancey Anderson", :role => "Principal", :email => true}
-                %br
+                %h3 Administration
+                .row-fluid
+                    .span12
+                        %ul.thumbnails
+                            = render :partial => "person", :locals => {:name => "Rachel Hemsey", :role => "Director of Operations", :email => true}
+                            = render :partial => "person", :locals => {:name => "Erica Jaastad", :role => "Academic Dean", :email => true}
+                            = render :partial => "person", :locals => {:name => "Paris Kyles", :role => "Dean of Students", :email => true}
+                            = render :partial => "person", :locals => {:name => "Mary Barsness", :role => "Learning Support Coordinator", :email => true}
                 %h3 Teachers
                 .row-fluid
                     .span12
                         %ul.thumbnails
                             = render :partial => "person", :locals => {:name => "Jennifer Christensen", :role => "Kindergarten Teacher", :email => true}
-                            = render :partial => "person", :locals => {:name => "Skye Hoekstra", :role => "Kindergarten Teacher", :email => true}
-                            = render :partial => "person", :locals => {:name => "Mandy Lindstrom", :role => "Kindergarten Teacher", :email => true}
-                            = render :partial => "person", :locals => {:name => "Rachel Dietsch", :role => "Kindergarten Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Kallie Fitzloff", :role => "Kindergarten Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Sara Gonzalez", :role => "Kindergarten Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Ryan Noshay", :role => "First Grade Teacher", :email => true}
                         %ul.thumbnails
-                            = render :partial => "person", :locals => {:name => "Charnay Paris", :role => "First Grade Teacher", :email => true}
-                            = render :partial => "person", :locals => {:name => "Ashley Willeck", :role => "First Grade Teacher", :email => true}
-                            = render :partial => "person", :locals => {:name => "Melissa Lindquist", :role => "First Grade Teacher", :email => true}
-                            = render :partial => "person", :locals => {:name => "Camille Sypura", :role => "Science/Social Studies Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Amanda Laurent", :role => "First Grade Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Rachel Dietsch", :role => "First Grade Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Nicole Black", :role => "First Grade Team Chair", :email => true}
+                            = render :partial => "person", :locals => {:name => "Skye Hoekstra", :role => "Second Grade Team Chair", :email => true}
                         %ul.thumbnails
-                            = render :partial => "person", :locals => {:name => "Paris Kyles", :role => "Fitness Coordinator", :email => true}
-                            = render :partial => "person", :locals => {:name => "Eleanor Karr", :role => "Learning Support Teacher", :email => true}
-                %h3 Academic Dean
+                            = render :partial => "person", :locals => {:name => "Ashley Denaway", :role => "Second Grade Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Brittany Gorr", :role => "Second Grade Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Melissa Lindquist", :role => "ELL Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Mandy Lindstrom", :role => "Learning Support Teacher", :email => true}
+                        %ul.thumbnails
+                            = render :partial => "person", :locals => {:name => "Cameron Hodges", :role => "Fitness Teacher", :email => true}
+                            = render :partial => "person", :locals => {:name => "Tiffany Graham", :role => "Educational Assistant", :email => true}
+                            = render :partial => "person", :locals => {:name => "Shanequa Cook", :role => "Educational Assistant", :email => true}
+                %h3 Staff
                 .row-fluid
                     .span12
                         %ul.thumbnails
-                            = render :partial => "person", :locals => {:name => "Erica Jaastad", :email => true}
-                %h3 Social Worker
-                .row-fluid
-                    .span12
-                        %ul.thumbnails
-                            = render :partial => "person", :locals => {:name => "Angela Shepherd", :email => true}
-                %h3 Office Administrator
-                .row-fluid
-                    .span12
-                        %ul.thumbnails
-                            = render :partial => "person", :locals => {:name => "Adi Perez", :email => true}
+                            = render :partial => "person", :locals => {:name => "Angela Shepherd", :role => "Social Worker", :email => true}
+                            = render :partial => "person", :locals => {:name => "Adi Perez", :role => "Office Administration", :email => true}
