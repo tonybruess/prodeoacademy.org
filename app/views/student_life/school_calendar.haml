@@ -2,129 +2,45 @@
     .row
         .span12.panel#panel-main
             .content
-                %h2 School Calendar
+                %h2
+                    School Calendar
+                    %small.pull-right
+                        %br
+                        %a{:href => asset_path("calendar_1516.pdf")} Download PDF Calendar
                 .row-fluid
-                    .span8
-                        %p
-                            %span.label.label-success No school for scholars, staff have professional development (PD)
-                            %span.label.label-info No school for scholars or staff
-                        %table.table.table-bordered.table-hover
-                            %thead
-                                %th{:width => "200px"} Day
-                                %th Description
-                            %tbody
-                                -#
-                                    %tr
-                                        %td June 17, 2014
-                                        %td
-                                            Lottery -
-                                            %a{:href => "#lottery-info", :data => {:toggle => "modal"}} Click for lottery information
-                                %tr.success
-                                    %td August 4 - 19, 2014
-                                    %td Staff PD - Summer
-                                %tr
-                                    %td August 20, 2014
-                                    %td First day for Kindergarteners
-                                %tr
-                                    %td August 25 - 29, 2014
-                                    %td First day for First Graders
-                                %tr.info
-                                    %td September 1, 2014
-                                    %td Labor Day
-                                %tr
-                                    %td September 2, 2014
-                                    %td First full day for Kindergarteners and First Graders
-                                %tr
-                                    %td September 2 - 5, 2014
-                                    %td
-                                        %b NWEA Testing
-                                %tr
-                                    %td September 2 - 12, 2014
-                                    %td
-                                        %i STEP Round 1
-                                %tr.success
-                                    %td September 12, 2014
-                                    %td Staff PD - STEP
-                                %tr.success
-                                    %td October 15, 2014
-                                    %td Staff PD - Culture
-                                %tr.info
-                                    %td October 16 - 17, 2014
-                                    %td MEA
-                                %tr
-                                    %td November 10 - 14, 2014
-                                    %td
-                                        %i STEP Round 2
-                                %tr
-                                    %td November 20, 2014
-                                    %td
-                                        %b Parent-Teacher Conferences (12pm early dismissal)
-                                %tr.success
-                                    %td November 21, 2014
-                                    %td Staff PD - STEP
-                                %tr.info
-                                    %td November 26 - 28, 2014
-                                    %td Thanksgiving
-                                %tr.info
-                                    %td December 22, 2014
-                                    %td Winter break begins
-                                %tr
-                                    %td January 5, 2015
-                                    %td School resumes
-                                %tr
-                                    %td January 12 - 16, 2015
-                                    %td
-                                        %b NWEA Testing
-                                %tr.info
-                                    %td January 19, 2015
-                                    %td MLK Day
-                                %tr
-                                    %td January 26 - February 6, 2015
-                                    %td
-                                        %i STEP Round 3
-                                %tr.success
-                                    %td February 6, 2015
-                                    %td Staff PD
-                                %tr.info
-                                    %td February 12 - 16, 2015
-                                    %td Mid-winter recess
-                                %tr
-                                    %td March 19, 2015
-                                    %td
-                                        %b Parent-Teacher conferences (12pm early dismissal)
-                                %tr
-                                    %td March 23 - 27, 2015
-                                    %td
-                                        %i STEP Round 4
-                                %tr.info
-                                    %td March 30 - April 6, 2015
-                                    %td Spring Break
-                                %tr.success
-                                    %td May 1, 2015
-                                    %td Staff PD
-                                %tr.info
-                                    %td May 25, 2015
-                                    %td Memorial Day
-                                %tr
-                                    %td June 1 - 5, 2015
-                                    %td
-                                        %b NWEA Testing
-                                %tr
-                                    %td June 1 - 11, 2015
-                                    %td
-                                        %i STEP Round 5
-                                %tr
-                                    %td June 8 - 11, 2015
-                                    %td 1:30pm early dismissal
-                                %tr
-                                    %td June 11, 2015
-                                    %td Last day of school for scholars - Stepping Up
-                                %tr.success
-                                    %td June 12, 2015
-                                    %td Last day of school for staff
-                    .span4
-                        %img{:src => asset_path('student_life/calendar.jpg')}
-#lottery-info.modal.hide.fade
+                    .span6
+                        %img{:src => asset_path("student_life/calendar/15-08.png")}
+                        %br
+                        %br
+                        %img{:src => asset_path("student_life/calendar/15-10.png")}
+                    .span6
+                        %img{:src => asset_path("student_life/calendar/15-09.png")}
+                        %br
+                        %br
+                        %img{:src => asset_path("student_life/calendar/15-11.png")}
+                %br
+                .row-fluid
+                    .span6
+                        %img{:src => asset_path("student_life/calendar/15-12.png")}
+                        %br
+                        %br
+                        %img{:src => asset_path("student_life/calendar/16-02.png")}
+                    .span6
+                        %img{:src => asset_path("student_life/calendar/16-01.png")}
+                        %br
+                        %br
+                        %img{:src => asset_path("student_life/calendar/16-03.png")}
+                %br
+                .row-fluid
+                    .span6
+                        %img{:src => asset_path("student_life/calendar/16-04.png")}
+                        %br
+                        %br
+                        %img{:src => asset_path("student_life/calendar/16-06.png")}
+                    .span6
+                        %img{:src => asset_path("student_life/calendar/16-05.png")}
+
+-#lottery-info.modal.hide.fade
     .modal-header
         %button.close{:type => "button", :data => {:dismiss => "modal"}} x
         %h3 Lottery Information
