@@ -1,19 +1,18 @@
 .container
     .row
-        .span5.panel#panel-left
+        .span4.panel#panel-left
             .content
                 %img{:src => asset_path('contact/teach.jpg')}
-        .span7.panel#panel-right
+        .span8.panel#panel-right
             .content
                 %h2 Apply to Teach
                 %p.lead
                     If you are a qualified teacher who would like to join our inspiring, engaged and results-driven community, we invite you to contact Chancey Anderson, Principal.
-                    %br
-                    %br
-                    %p
-                        %b Chancey Anderson, Principal
-                    %p.text-info chanceyanderson@prodeoacademy.org
-                    %p.text-info (347) 982-5061
                 %br
                 %br
-                %br
+                %p
+                    %b Chancey Anderson, Principal
+                %p
+                    %a{:href => "mailto:chanceyanderson@prodeoacademy.org"} chanceyanderson@prodeoacademy.org
+                %p
+                    %a{:href => "tel:3479825061"} (347) 982-5061
