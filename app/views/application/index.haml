@@ -6,7 +6,7 @@
                     %a{:href => "#youtube", :data => {:toggle => "modal"}}
                         %img.youtube.pull-left{:src => asset_path('youtube.png'), :rel => "tooltip", :title => "Watch our video", :data => {:position => "top"}}
                     %h1 College Starts Here
-                    %a.btn.btn-large.btn-inverse{:href => "/about/who_we_are"} Enroll your child today &raquo;
+                    %a.btn.btn-large.btn-inverse{:href => "/contact/apply_to_tutor"} Become a Tutor &raquo;
             - (1..16).to_a.shuffle.each_with_index do |i, j|
                 .item{:class => j == 0 ? 'active' : ''}
                     %img{:src => asset_path("index/#{i}.jpg")}
