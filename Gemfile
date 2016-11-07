@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'json'
 gem 'haml'
 gem 'capistrano', '2.15.5'
-gem 'rvm-capistrano'
+gem 'rvm-capistrano', require: false
 gem 'capistrano-unicorn'
 gem 'less-rails-bootstrap', '2.3.3'
 gem 'therubyracer'
