@@ -1,6 +1,6 @@
 %li.span3
     .thumbnail
-        %img{:src => asset_path("board/#{urlify(name)}.png"), :width => "175px"}
+        %img{:src => asset_path("board/#{urlify(name)}.jpg"), :width => "175px"}
         .caption
             %h4= name.html_safe
             - if local_assigns.has_key? :role
