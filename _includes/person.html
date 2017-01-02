@@ -1,0 +1,15 @@
+<li class='span3'>
+    <div class='thumbnail'>
+        <img src='/assets/board/{{ include.name | downcase | replace: ' ', '_' }}.jpg' width='175px'>
+        <div class='caption'>
+            <h4>{{ include.name }}</h4>
+            <small>{{ include.role }}</small>
+            {% unless include.no_email %}
+                <small>
+                    {% assign address = include.name | downcase | replace: ' ', '' | append: '@prodeoacademy.org' %}
+                    <a href='mailto:{{ address }}'>{{ address | truncate: 26 }}</a>
+                </small>
+            {% endunless %}
+        </div>
+    </div>
+</li>

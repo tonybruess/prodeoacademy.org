@@ -1,0 +1,151 @@
+---
+layout: default
+---
+<div class='container'>
+    <div class='carousel slide'>
+        <div class='carousel-inner'>
+            <div class='container'>
+                <div class='carousel-caption'>
+                    <a data-toggle='modal' href='#youtube'>
+                        <img class='youtube pull-left' data-position='top' rel='tooltip' src='/assets/youtube.png' title='Watch our video'>
+                    </a>
+                    <h1>College Starts Here</h1>
+                    <a class='btn btn-large btn-inverse' href='/contact/apply_to_tutor'>Become a Tutor &raquo;</a>
+                </div>
+            </div>
+            {% assign total = 16 %}
+            {% assign start = site.time | date: "%s" | modulo: total %}
+            {% for num in (1..total) %}
+                <div class='{% if forloop.index0 == start %} active {% endif %}item'>
+                    <img src='/assets/index/{{ num }}.jpg'>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class='container'>
+    <div class='row center' id='index'>
+        <div class='span4'>
+            <div class='hero-unit' id='families'>
+                <h3>College Starts Here</h3>
+                <div class='btn-group dropup'>
+                    <a class='btn btn-large dropdown-toggle' data-toggle='dropdown' href='#'>
+                        Enroll Your Child
+                        <span class='caret'></span>
+                    </a>
+                    <ul class='dropdown-menu'>
+                        <li>
+                            <a href='/assets/handout_two.pdf' target='_blank'>Why choose Prodeo Academy?</a>
+                        </li>
+                        <li class='divider'></li>
+                        <li>
+                            <a data-toggle='modal' href='#stay-in-touch'>Stay in Touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='span4'>
+            <div class='hero-unit' id='donors'>
+                <h3>Close the Gap</h3>
+                <div class='btn-group dropup'>
+                    <a class='btn btn-large dropdown-toggle' data-toggle='dropdown' href='#'>
+                        Volunteer / Career
+                        <span class='caret'></span>
+                    </a>
+                    <ul class='dropdown-menu'>
+                        <li>
+                            <a href='/assets/handout_one.pdf' target='_blank'>Why choose Prodeo Academy?</a>
+                        </li>
+                        <li class='divider'></li>
+                        <li>
+                            <a href='/assets/handout_four.pdf' target='_blank'>Who we are looking for</a>
+                        </li>
+                        <li class='divider'></li>
+                        <li>
+                            <a href='/contact/apply_to_teach'>Apply to Teach</a>
+                        </li>
+                        <li class='divider'></li>
+                        <li>
+                            <a href='/contact/apply_to_tutor'>Apply to Tutor</a>
+                        </li>
+                        <li class='divider'></li>
+                        <li>
+                            <a href='/contact/volunteer'>Volunteer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='span4'>
+            <div class='hero-unit' id='tutors'>
+                <h3>Build the Future</h3>
+                <div class='btn-group dropup'>
+                    <a class='btn btn-large' data-toggle='modal' href='#donate'>Donate Today</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='modal hide fade' id='stay-in-touch'>
+    <div class='modal-header'>
+        <button class='close' data-dismiss='modal' type='button'>x</button>
+        <h3>Stay in Touch</h3>
+    </div>
+    <div class='modal-body'>
+        <p class='lead'>If you’re interested in learning more about our inspiring community, feel free to contact us.</p>
+        <br>
+        <p>
+            <b>Jermain Davis</b>
+        </p>
+        <p>
+            <a href='mailto:jermaindavis@prodeoacademy.org'>jermaindavis@prodeoacademy.org</a>
+        </p>
+        <p>
+            <a href='tel:6518155843'>(651) 815-5843</a>
+        </p>
+    </div>
+</div>
+<div class='modal hide fade' id='youtube'>
+    <div class='modal-header'>
+        <button class='close' data-dismiss='modal' id='stop-video' type='button'>x</button>
+        <h3>Video</h3>
+    </div>
+    <div class='modal-body'>
+        <iframe allowfullscreen frameborder='0' height='300px' id='video' ssrc='//player.vimeo.com/video/96627422?autoplay=1' width='530px'></iframe>
+    </div>
+</div>
+<div class='modal hide fade' id='donate'>
+    <div class='modal-header'>
+        <button class='close' data-dismiss='modal' id='stop-video' type='button'>x</button>
+        <h3>Donate Today</h3>
+    </div>
+    <div class='modal-body'>
+        <div class='row-fluid'>
+            <div class='span6'>
+                <p class='lead'>Donate online</p>
+                <br>
+                <div class='center'>
+                    <a href='http://www.razoo.com/story/Education-Prodeo-Academy' target='_blank'>
+                        <span>Click to donate online</span>
+                        <img src='/assets/givemn.png'>
+                    </a>
+                </div>
+            </div>
+            <div class='span6'>
+                <p class='lead'>Donate by mail</p>
+                <p>To make a contribution by mail, send a check to the address below.</p>
+                <p>
+                    Attention: Rick Campion
+                    <br>
+                    Prodeo Academy
+                    <br>
+                    1555 40th Ave NE
+                    <br>
+                    Minneapolis, MN 55421
+                </p>
+                <p>Federal Tax ID: 80-0743744</p>
+            </div>
+        </div>
+    </div>
+</div>

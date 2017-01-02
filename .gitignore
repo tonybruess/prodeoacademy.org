@@ -1,4 +1,3 @@
-*html
-.DS_Store
-tmp
-log
+_site
+.sass-cache
+.jekyll-metadata
