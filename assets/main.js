@@ -19,7 +19,7 @@
 $(document).ready(function() {
     // for some reason this needs to be delayed, otherwise it appears in the wrong place
     setTimeout(function() {
-        $('.youtube').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+        $('#youtube-link img').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
     }, 250);
 
     $('.carousel').carousel({pause : 'false'});
