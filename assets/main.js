@@ -24,11 +24,11 @@ $(document).ready(function() {
 
     $('.carousel').carousel({pause : 'false'});
 
-    $('#youtube').on('shown', function() {
+    $('#youtube-modal').on('shown', function() {
         $('#video').attr('src', $('#video').attr('ssrc'));
     });
 
-    $('#youtube').on('hidden', function() {
+    $('#youtube-modal').on('hidden', function() {
         $('#video').attr('src', '');
     });
 });
