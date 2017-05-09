@@ -31,6 +31,25 @@ $(document).ready(function() {
     $('#youtube-modal').on('hidden', function() {
         $('#video').attr('src', '');
     });
+
+    $('#enroll').on('submit', function(e) {
+        // Prevent form submission
+        e.preventDefault();
+
+        // Get the form instance
+        var form = $(e.target);
+        var button = form.find('button');
+
+        // Use Ajax to submit form data
+        var url = 'https://script.google.com/macros/s/AKfycbwiwe3VRoVbWuoHol84K1EDUkrWv_qkhbsDsHZ4ByjBZ03NPXv2/exec';
+        var redirectUrl = 'enroll_success';
+
+        // show the loading
+        $('#enroll button').prop('disabled', true).html('Submitting...');
+        var jqxhr = $.post(url, form.serialize(), function(data) {
+            $(location).attr('href', redirectUrl);
+        });
+    });
 });
 
 (function(d, s, id) {
