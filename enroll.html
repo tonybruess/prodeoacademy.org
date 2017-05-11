@@ -94,7 +94,7 @@ title: Contact
                             <div class="form-group">
                                 <label for="email1" class="control-label">Email</label>
                                 <div class="controls">
-                                    <input type="text" id="email1" name="email1" class="form-control" required>
+                                    <input type="text" id="email1" name="email1" class="form-control">
                                 </div>
                             </div>
 
@@ -125,7 +125,7 @@ title: Contact
                             <div class="form-group">
                                 <label for="from" class="control-label">How did you hear about Prodeo Academy?</label>
                                 <div class="controls">
-                                    <select id="from" name="from">
+                                    <select id="from" name="from" required>
                                         <option></option>
                                         <option>Word of mouth (student, parent, etc.)</option>
                                         <option>Daycare or Preschool provider</option>
@@ -140,6 +140,10 @@ title: Contact
                             <br>
                             <br>
                             <br>
+
+                            <div class="alert alert-danger" style="display:none">
+                                <span>Please fill out all the required fields before submitting.</span>
+                            </div>
 
                             <div class="form-group">
                                 <div class="controls">

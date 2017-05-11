@@ -40,6 +40,18 @@ $(document).ready(function() {
         var form = $(e.target);
         var button = form.find('button');
 
+        var invalid = false;
+        form.find('input').each(function (){
+            if ($(this).val() == '' && $(this).attr('required') !== undefined) {
+                invalid = true;
+            }
+        });
+
+        if (invalid) {
+            form.find('.alert').removeAttr('style');
+            return;
+        }
+
         // Use Ajax to submit form data
         var url = 'https://script.google.com/macros/s/AKfycbwiwe3VRoVbWuoHol84K1EDUkrWv_qkhbsDsHZ4ByjBZ03NPXv2/exec';
         var redirectUrl = 'enroll_success';
