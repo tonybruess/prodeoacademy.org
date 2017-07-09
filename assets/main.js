@@ -62,6 +62,13 @@ $(document).ready(function() {
             $(location).attr('href', redirectUrl);
         });
     });
+
+    $('#localize-powered').livequery(function() {
+        var el = $(this);
+        el.text('Language');
+        el.attr('href', '#');
+        el.attr('target', '');
+    });
 });
 
 (function(d, s, id) {
@@ -80,3 +87,4 @@ Localize.initialize({
     key: 'DF0FpGdPToEXF',
     rememberLanguage: true
 });
+
