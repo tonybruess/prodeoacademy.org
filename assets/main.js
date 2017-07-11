@@ -65,9 +65,9 @@ $(document).ready(function() {
 
     $('#localize-powered').livequery(function() {
         var el = $(this);
-        el.text('Language');
-        el.attr('href', '#');
-        el.attr('target', '');
+        // el.text('Language');
+        // el.attr('href', '#');
+        // el.attr('target', '');
     });
 });
 
