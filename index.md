@@ -150,9 +150,9 @@ layout: default
                     <br>
                     Prodeo Academy
                     <br>
-                    1555 40th Ave NE
+                    620 Olson Memorial Highway
                     <br>
-                    Minneapolis, MN 55421
+                    Minneapolis, MN 55411
                 </p>
                 <p>Federal Tax ID: 80-0743744</p>
             </div>
