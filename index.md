@@ -54,15 +54,15 @@ layout: default
                         </li>
                         <li class='divider'></li>
                         <li>
-                            <a href='/contact/apply_to_teach'>Apply to Teach</a>
+                            <a href='/get_involved/work_at_prodeo'>Work at Prodeo</a>
                         </li>
                         <li class='divider'></li>
                         <li>
-                            <a href='/contact/apply_to_tutor'>Apply to Tutor</a>
+                            <a href='/get_involved/apply_to_tutor'>Apply to Tutor</a>
                         </li>
                         <li class='divider'></li>
                         <li>
-                            <a href='/contact/volunteer'>Volunteer</a>
+                            <a href='/get_involved/volunteer'>Volunteer</a>
                         </li>
                     </ul>
                 </div>
