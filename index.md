@@ -11,7 +11,7 @@ layout: default
                         <img class='pull-left' data-position='top' rel='tooltip' src='/assets/youtube.png' title='Watch our video'>
                     </a>
                     <h1>College Starts Here</h1>
-                    <a class='btn' href='/get_involved/work_at_prodeo'>Now Hiring &raquo;</a>
+                    <a class='btn' href='https://prodeo-academy.breezy.hr/'>Now Hiring &raquo;</a>
                 </div>
             </div>
             {% assign total = 16 %}
@@ -54,7 +54,7 @@ layout: default
                         </li>
                         <li class='divider'></li>
                         <li>
-                            <a href='/get_involved/work_at_prodeo'>Work at Prodeo</a>
+                            <a href='https://prodeo-academy.breezy.hr'>Work at Prodeo</a>
                         </li>
                         <li class='divider'></li>
                         <li>
