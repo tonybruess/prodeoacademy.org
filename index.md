@@ -11,7 +11,7 @@ layout: default
                         <img class='pull-left' data-position='top' rel='tooltip' src='/assets/youtube.png' title='Watch our video'>
                     </a>
                     <h1>College Starts Here</h1>
-                    <a class='btn' href='https://prodeo-academy.breezy.hr/'>Now Hiring &raquo;</a>
+                  <!--  <a class='btn' href='https://prodeo-academy.breezy.hr/'>Now Hiring &raquo;</a>-->
                 </div>
             </div>
             {% assign total = 16 %}
