@@ -40,31 +40,10 @@ layout: default
             <div class='hero-unit' id='donors'>
                 <h3>Close the Gap</h3>
                 <div class='btn-group dropup'>
-                    <a class='btn btn-large dropdown-toggle' data-toggle='dropdown' href='#'>
-                        Volunteer / Career
+                    <a class='btn btn-large dropdown-toggle' data-toggle='dropdown' href='https://prodeo-academy.breezy.hr/'>
+                        Careers
                         <span class='caret'></span>
                     </a>
-                    <ul class='dropdown-menu'>
-                        <li>
-                            <a href='/assets/handout_one.pdf' target='_blank'>Why choose Prodeo Academy?</a>
-                        </li>
-                        <li class='divider'></li>
-                        <li>
-                            <a href='/assets/handout_four.pdf' target='_blank'>Who we are looking for</a>
-                        </li>
-                        <li class='divider'></li>
-                        <li>
-                            <a href='https://prodeo-academy.breezy.hr'>Work at Prodeo</a>
-                        </li>
-                        <li class='divider'></li>
-                        <li>
-                            <a href='/get_involved/apply_to_tutor'>Apply to Tutor</a>
-                        </li>
-                        <li class='divider'></li>
-                        <li>
-                            <a href='/get_involved/volunteer'>Volunteer</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
