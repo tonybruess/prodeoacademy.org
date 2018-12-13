@@ -10,11 +10,11 @@ layout: default
                 <div class="container">
                     <div class="carousel slide" id="academics">
                         <div class="carousel-inner">
-                            {% assign total = 10 %}
+                            {% assign total = 1 %}
                             {% assign start = site.time | date: "%s" | modulo: total %}
                             {% for num in (1..total) %}
                                 <div class="{% if forloop.index0 == start %} active {% endif %}item">
-                                    <img src="/assets/student_life/academics/%7B%7B%20num%20%7D%7D.jpg">
+                                    <img src="/assets/student_life/academics/1.jpg">
                                 </div>
                             {% endfor %}
                         </div>
