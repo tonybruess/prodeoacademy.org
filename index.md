@@ -40,7 +40,7 @@ layout: default
             <div class='hero-unit' id='donors'>
                 <h3>Close the Gap</h3>
                 <div class='btn-group dropup'>
-                    <a class='btn btn-large dropdown-toggle' data-toggle='dropdown' href='https://prodeo-academy.breezy.hr/'>
+                    <a class='btn btn-large dropdown-toggle' href='https://prodeo-academy.breezy.hr/'>
                         Careers
                         <span class='caret'></span>
                     </a>
