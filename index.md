@@ -14,7 +14,7 @@ layout: default
                   <!--  <a class='btn' href='https://prodeo-academy.breezy.hr/'>Now Hiring &raquo;</a>-->
                 </div>
             </div>
-            {% assign total = 16 %}
+            {% assign total = 10 %}
             {% assign start = site.time | date: "%s" | modulo: total %}
             {% for num in (1..total) %}
                 <div class='{% if forloop.index0 == start %} active {% endif %}item'>
