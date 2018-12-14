@@ -42,7 +42,6 @@ layout: default
                 <div class='btn-group dropup'>
                     <a class='btn btn-large dropdown-toggle' href='https://prodeo-academy.breezy.hr/'>
                         Careers
-                        <span class='caret'></span>
                     </a>
                 </div>
             </div>
