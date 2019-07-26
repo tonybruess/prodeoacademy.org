@@ -48,6 +48,14 @@ layout: default
         </div>
         <div class='span4'>
             <div class='hero-unit' id='tutors'>
+                <h3>Back to School</h3>
+                <div class='btn-group dropup'>
+                    <a class='btn btn-large' data-toggle='modal' href='https://bit.ly/2xRPySy'>More Information</a>
+                </div>
+            </div>
+        </div>
+         <div class='span4'>
+            <div class='hero-unit' id='tutors'>
                 <h3>Build the Future</h3>
                 <div class='btn-group dropup'>
                     <a class='btn btn-large' data-toggle='modal' href='#donate'>Donate Today</a>
