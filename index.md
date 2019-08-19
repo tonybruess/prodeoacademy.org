@@ -7,7 +7,9 @@ layout: default
         <div class='carousel-inner'>
             <div class='container'>
                 <div class='carousel-caption'>
+                    <a id='youtube-link' href='https://www.youtube.com/watch?v=__PjDIdam7o' data-toggle='modal'><!--
                     <a id='youtube-link' href='#youtube-modal' data-toggle='modal'>
+-->
                         <img class='pull-left' data-position='top' rel='tooltip' src='/assets/youtube.png' title='Watch our video'>
                     </a>
                     <h1>College Starts Here</h1>
